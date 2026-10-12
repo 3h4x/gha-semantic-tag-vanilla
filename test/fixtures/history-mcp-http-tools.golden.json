@@ -1,0 +1,3481 @@
+[
+  {
+    "name": "mcp-http-tools v1.0.0",
+    "version": "1.0.0",
+    "nextTag": "v1.0.0",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "073bb2df408720389b8ef0b95cf731b4979eb67a",
+        "message": "feat: add error handling for HTTP non-2xx responses"
+      },
+      {
+        "hash": "69e4ff5b3510d55a3866fc4a47e1765b5db9dd3a",
+        "message": "feat: add startup config validation"
+      },
+      {
+        "hash": "345b5f4a125f2af2518a75e0f6d0b92d565894c4",
+        "message": "refactor: support body methods beyond POST in buildRequest"
+      },
+      {
+        "hash": "e9abff1f81b81e63b93a5eaf4ff0dea261adf809",
+        "message": "feat: add initial mcp-http-tools implementation"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "minor",
+    "notes": "# 1.0.0 (DATE)\n\n\n### Features\n\n* add error handling for HTTP non-2xx responses ([073bb2d](https://github.com/3h4x/mcp-http-tools/commit/073bb2df408720389b8ef0b95cf731b4979eb67a))\n* add initial mcp-http-tools implementation ([e9abff1](https://github.com/3h4x/mcp-http-tools/commit/e9abff1f81b81e63b93a5eaf4ff0dea261adf809))\n* add startup config validation ([69e4ff5](https://github.com/3h4x/mcp-http-tools/commit/69e4ff5b3510d55a3866fc4a47e1765b5db9dd3a))\n"
+  },
+  {
+    "name": "mcp-http-tools v1.0.0..v1.1.0",
+    "version": "1.1.0",
+    "lastTag": "v1.0.0",
+    "nextTag": "v1.1.0",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "7f6e5745d41c3e3c8ae57575e78f99aacc2b75c0",
+        "message": "feat: add request timeouts and comprehensive tests"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "minor",
+    "notes": "# [1.1.0](https://github.com/3h4x/mcp-http-tools/compare/v1.0.0...v1.1.0) (DATE)\n\n\n### Features\n\n* add request timeouts and comprehensive tests ([7f6e574](https://github.com/3h4x/mcp-http-tools/commit/7f6e5745d41c3e3c8ae57575e78f99aacc2b75c0))\n"
+  },
+  {
+    "name": "mcp-http-tools v1.1.0..v1.1.1",
+    "version": "1.1.1",
+    "lastTag": "v1.1.0",
+    "nextTag": "v1.1.1",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "4528b8d6e11b104085d25dac1c2a369a80845b4e",
+        "message": "chore: release for each commit"
+      },
+      {
+        "hash": "263df70f63779425bc08d9a799914517c0a962aa",
+        "message": "test: add null and undefined args fallback tests"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [1.1.1](https://github.com/3h4x/mcp-http-tools/compare/v1.1.0...v1.1.1) (DATE)\n"
+  },
+  {
+    "name": "mcp-http-tools v1.1.1..v1.1.2",
+    "version": "1.1.2",
+    "lastTag": "v1.1.1",
+    "nextTag": "v1.1.2",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "43afb1fbc6699b0a39b7d2b041f8480b7d723fcd",
+        "message": "chore: automated update"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [1.1.2](https://github.com/3h4x/mcp-http-tools/compare/v1.1.1...v1.1.2) (DATE)\n"
+  },
+  {
+    "name": "mcp-http-tools v1.1.2..v1.1.3",
+    "version": "1.1.3",
+    "lastTag": "v1.1.2",
+    "nextTag": "v1.1.3",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "3d9eedc699bece87b57f6d5c82b158ad0af448cd",
+        "message": "ci: remove pnpm version pinning"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [1.1.3](https://github.com/3h4x/mcp-http-tools/compare/v1.1.2...v1.1.3) (DATE)\n"
+  },
+  {
+    "name": "mcp-http-tools v1.1.3..v1.1.4",
+    "version": "1.1.4",
+    "lastTag": "v1.1.3",
+    "nextTag": "v1.1.4",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "118020ea0b05ab0268493200d7484ee27144f65f",
+        "message": "fix: validate config and warn for unset env vars"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [1.1.4](https://github.com/3h4x/mcp-http-tools/compare/v1.1.3...v1.1.4) (DATE)\n\n\n### Bug Fixes\n\n* validate config and warn for unset env vars ([118020e](https://github.com/3h4x/mcp-http-tools/commit/118020ea0b05ab0268493200d7484ee27144f65f))\n"
+  },
+  {
+    "name": "mcp-http-tools v1.1.4..v1.1.5",
+    "version": "1.1.5",
+    "lastTag": "v1.1.4",
+    "nextTag": "v1.1.5",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "7ad7e5256a7d4ed88632e9cbf94fc22b0fbdcf49",
+        "message": "fix: skip undefined params in requests"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [1.1.5](https://github.com/3h4x/mcp-http-tools/compare/v1.1.4...v1.1.5) (DATE)\n\n\n### Bug Fixes\n\n* skip undefined params in requests ([7ad7e52](https://github.com/3h4x/mcp-http-tools/commit/7ad7e5256a7d4ed88632e9cbf94fc22b0fbdcf49))\n"
+  },
+  {
+    "name": "mcp-http-tools v1.1.5..v1.2.0",
+    "version": "1.2.0",
+    "lastTag": "v1.1.5",
+    "nextTag": "v1.2.0",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "746ab6f3f3d0942548147ef24479b9e7ae06d1f6",
+        "message": "feat: validate URL placeholders and response.path"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "minor",
+    "notes": "# [1.2.0](https://github.com/3h4x/mcp-http-tools/compare/v1.1.5...v1.2.0) (DATE)\n\n\n### Features\n\n* validate URL placeholders and response.path ([746ab6f](https://github.com/3h4x/mcp-http-tools/commit/746ab6f3f3d0942548147ef24479b9e7ae06d1f6))\n"
+  },
+  {
+    "name": "mcp-http-tools v1.2.0..v1.2.1",
+    "version": "1.2.1",
+    "lastTag": "v1.2.0",
+    "nextTag": "v1.2.1",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "8dbe7df80e84ab565159ca6af862f4e1044b8209",
+        "message": "fix: add tools array validation"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [1.2.1](https://github.com/3h4x/mcp-http-tools/compare/v1.2.0...v1.2.1) (DATE)\n\n\n### Bug Fixes\n\n* add tools array validation ([8dbe7df](https://github.com/3h4x/mcp-http-tools/commit/8dbe7df80e84ab565159ca6af862f4e1044b8209))\n"
+  },
+  {
+    "name": "mcp-http-tools v1.2.1..v1.2.2",
+    "version": "1.2.2",
+    "lastTag": "v1.2.1",
+    "nextTag": "v1.2.2",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "160e7163ff62a90cad322ef9c3cb1fc3701641aa",
+        "message": "fix: improve null safety and type coercion"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [1.2.2](https://github.com/3h4x/mcp-http-tools/compare/v1.2.1...v1.2.2) (DATE)\n\n\n### Bug Fixes\n\n* improve null safety and type coercion ([160e716](https://github.com/3h4x/mcp-http-tools/commit/160e7163ff62a90cad322ef9c3cb1fc3701641aa))\n"
+  },
+  {
+    "name": "mcp-http-tools v1.2.2..v1.2.3",
+    "version": "1.2.3",
+    "lastTag": "v1.2.2",
+    "nextTag": "v1.2.3",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "19fb39e17e54039c4e6270ca02ba0c72b91971b7",
+        "message": "fix(validation): handle env vars in URL validation"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [1.2.3](https://github.com/3h4x/mcp-http-tools/compare/v1.2.2...v1.2.3) (DATE)\n\n\n### Bug Fixes\n\n* **validation:** handle env vars in URL validation ([19fb39e](https://github.com/3h4x/mcp-http-tools/commit/19fb39e17e54039c4e6270ca02ba0c72b91971b7))\n"
+  },
+  {
+    "name": "mcp-http-tools v1.2.3..v1.2.4",
+    "version": "1.2.4",
+    "lastTag": "v1.2.3",
+    "nextTag": "v1.2.4",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "b6f7add7182f8bffba1cc4c2a33bfd0f490504f3",
+        "message": "refactor: extract toQueryString helper"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [1.2.4](https://github.com/3h4x/mcp-http-tools/compare/v1.2.3...v1.2.4) (DATE)\n"
+  },
+  {
+    "name": "mcp-http-tools v1.2.4..v1.2.5",
+    "version": "1.2.5",
+    "lastTag": "v1.2.4",
+    "nextTag": "v1.2.5",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "c954bf0ca1aac8c0a68f4ad693c1765acba80756",
+        "message": "chore: update lib.js, test.js"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [1.2.5](https://github.com/3h4x/mcp-http-tools/compare/v1.2.4...v1.2.5) (DATE)\n"
+  },
+  {
+    "name": "mcp-http-tools v1.2.5..v1.2.6",
+    "version": "1.2.6",
+    "lastTag": "v1.2.5",
+    "nextTag": "v1.2.6",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "22a7050eef35b556f2ca4cbdcefd13f76bd2f894",
+        "message": "test: add header coercion and type validation tests"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [1.2.6](https://github.com/3h4x/mcp-http-tools/compare/v1.2.5...v1.2.6) (DATE)\n"
+  },
+  {
+    "name": "mcp-http-tools v1.2.6..v1.2.7",
+    "version": "1.2.7",
+    "lastTag": "v1.2.6",
+    "nextTag": "v1.2.7",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "e97d86ca5712319f7560d739f1085b41f6cc04ac",
+        "message": "docs: add development standards and test cases"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [1.2.7](https://github.com/3h4x/mcp-http-tools/compare/v1.2.6...v1.2.7) (DATE)\n"
+  },
+  {
+    "name": "mcp-http-tools v1.2.7..v1.2.8",
+    "version": "1.2.8",
+    "lastTag": "v1.2.7",
+    "nextTag": "v1.2.8",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "85f1e6ae93f88ddef162b035c9a7e41fbf2c6665",
+        "message": "docs: update test count and remove completed items"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [1.2.8](https://github.com/3h4x/mcp-http-tools/compare/v1.2.7...v1.2.8) (DATE)\n"
+  },
+  {
+    "name": "mcp-http-tools v1.2.8..v1.2.9",
+    "version": "1.2.9",
+    "lastTag": "v1.2.8",
+    "nextTag": "v1.2.9",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "b9f1acbcdf20a472cad32ca2e947bc02ec17a883",
+        "message": "test: add array/object default serialization tests"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [1.2.9](https://github.com/3h4x/mcp-http-tools/compare/v1.2.8...v1.2.9) (DATE)\n"
+  },
+  {
+    "name": "mcp-http-tools v1.2.9..v1.2.10",
+    "version": "1.2.10",
+    "lastTag": "v1.2.9",
+    "nextTag": "v1.2.10",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "44786b9f483f08e9f947ecf22a4c47245333019f",
+        "message": "test: add validateConfig edge case tests"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [1.2.10](https://github.com/3h4x/mcp-http-tools/compare/v1.2.9...v1.2.10) (DATE)\n"
+  },
+  {
+    "name": "mcp-http-tools v1.2.10..v1.2.11",
+    "version": "1.2.11",
+    "lastTag": "v1.2.10",
+    "nextTag": "v1.2.11",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "1fd969ffe80358e89e1a714a7db4d9337b83965d",
+        "message": "docs: fill CLAUDE.md gaps (conventions, security, testing, patterns)"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [1.2.11](https://github.com/3h4x/mcp-http-tools/compare/v1.2.10...v1.2.11) (DATE)\n"
+  },
+  {
+    "name": "mcp-http-tools v1.2.11..v1.2.12",
+    "version": "1.2.12",
+    "lastTag": "v1.2.11",
+    "nextTag": "v1.2.12",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "d3212de73013ed79eb7a0fb82fdab9b376e7718a",
+        "message": "chore: update lib.js, test.js"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [1.2.12](https://github.com/3h4x/mcp-http-tools/compare/v1.2.11...v1.2.12) (DATE)\n"
+  },
+  {
+    "name": "mcp-http-tools v1.2.12..v1.2.13",
+    "version": "1.2.13",
+    "lastTag": "v1.2.12",
+    "nextTag": "v1.2.13",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "b54d67d1ae1926ee8243e6c21a64fd5272746e14",
+        "message": "chore: update lib.js, test.js"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [1.2.13](https://github.com/3h4x/mcp-http-tools/compare/v1.2.12...v1.2.13) (DATE)\n"
+  },
+  {
+    "name": "mcp-http-tools v1.2.13..v1.2.14",
+    "version": "1.2.14",
+    "lastTag": "v1.2.13",
+    "nextTag": "v1.2.14",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "fc909b1b97e1d42769f15c86d668ff02af18f902",
+        "message": "chore: update README.md, config.yaml, docs/raw-path-placeholders.md"
+      },
+      {
+        "hash": "f4daf7d5191f39a784757d4ed2ef52915fee3cdc",
+        "message": "docs: fill CLAUDE.md gaps (conventions, security, testing, patterns)"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [1.2.14](https://github.com/3h4x/mcp-http-tools/compare/v1.2.13...v1.2.14) (DATE)\n"
+  },
+  {
+    "name": "mcp-http-tools v1.2.14..v1.2.15",
+    "version": "1.2.15",
+    "lastTag": "v1.2.14",
+    "nextTag": "v1.2.15",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "b86192be10d34e115f595d00cbc901787bbac4d0",
+        "message": "test: add validateConfig unnamed param tests"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [1.2.15](https://github.com/3h4x/mcp-http-tools/compare/v1.2.14...v1.2.15) (DATE)\n"
+  },
+  {
+    "name": "mcp-http-tools v1.2.15..v1.3.0",
+    "version": "1.3.0",
+    "lastTag": "v1.2.15",
+    "nextTag": "v1.3.0",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "ef0b448686c62f92bff66542c09ed406ebdfb72f",
+        "message": "feat: validate required raw path parameters"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "minor",
+    "notes": "# [1.3.0](https://github.com/3h4x/mcp-http-tools/compare/v1.2.15...v1.3.0) (DATE)\n\n\n### Features\n\n* validate required raw path parameters ([ef0b448](https://github.com/3h4x/mcp-http-tools/commit/ef0b448686c62f92bff66542c09ed406ebdfb72f))\n"
+  },
+  {
+    "name": "mcp-http-tools v1.3.0..v1.3.1",
+    "version": "1.3.1",
+    "lastTag": "v1.3.0",
+    "nextTag": "v1.3.1",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "9e45d68c57ea595369551409d8c24118b28466b8",
+        "message": "test: add raw path validation tests"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [1.3.1](https://github.com/3h4x/mcp-http-tools/compare/v1.3.0...v1.3.1) (DATE)\n"
+  },
+  {
+    "name": "mcp-http-tools v1.3.1..v1.3.2",
+    "version": "1.3.2",
+    "lastTag": "v1.3.1",
+    "nextTag": "v1.3.2",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "f949a2cbd65e75e68b577b725c9d963d17d2a137",
+        "message": "test: add raw path parameter edge case tests"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [1.3.2](https://github.com/3h4x/mcp-http-tools/compare/v1.3.1...v1.3.2) (DATE)\n"
+  },
+  {
+    "name": "mcp-http-tools v1.3.2..v1.3.3",
+    "version": "1.3.3",
+    "lastTag": "v1.3.2",
+    "nextTag": "v1.3.3",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "4504eb2b3f4c41b68a5d14ef14fdbe2d72d69155",
+        "message": "docs: fill CLAUDE.md gaps (conventions, security, testing, patterns)"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [1.3.3](https://github.com/3h4x/mcp-http-tools/compare/v1.3.2...v1.3.3) (DATE)\n"
+  },
+  {
+    "name": "mcp-http-tools v1.3.3..v1.3.4",
+    "version": "1.3.4",
+    "lastTag": "v1.3.3",
+    "nextTag": "v1.3.4",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "a6a2d042db50d0c2bc25c7a0d59f897b7d990ab9",
+        "message": "chore: update README.md, config.yaml, docs/raw-path-placeholders.md"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [1.3.4](https://github.com/3h4x/mcp-http-tools/compare/v1.3.3...v1.3.4) (DATE)\n"
+  },
+  {
+    "name": "mcp-http-tools v1.3.4..v1.3.5",
+    "version": "1.3.5",
+    "lastTag": "v1.3.4",
+    "nextTag": "v1.3.5",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "af046be22a772d65cce656cdce62f446d58567dc",
+        "message": "test: add real server placeholder integration"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [1.3.5](https://github.com/3h4x/mcp-http-tools/compare/v1.3.4...v1.3.5) (DATE)\n"
+  },
+  {
+    "name": "mcp-http-tools v1.3.5..v1.3.6",
+    "version": "1.3.6",
+    "lastTag": "v1.3.5",
+    "nextTag": "v1.3.6",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "41e17305053d5f7a9f88ba00159f4eee04b5a32a",
+        "message": "docs: use pnpm dlx in supergateway example"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [1.3.6](https://github.com/3h4x/mcp-http-tools/compare/v1.3.5...v1.3.6) (DATE)\n"
+  },
+  {
+    "name": "mcp-http-tools v1.3.6..v1.3.7",
+    "version": "1.3.7",
+    "lastTag": "v1.3.6",
+    "nextTag": "v1.3.7",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "163b57c899467bc2d5a2ef2ab3f19a8edd20148e",
+        "message": "docs: update test count to 250"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [1.3.7](https://github.com/3h4x/mcp-http-tools/compare/v1.3.6...v1.3.7) (DATE)\n"
+  },
+  {
+    "name": "mcp-http-tools v1.3.7..v1.3.8",
+    "version": "1.3.8",
+    "lastTag": "v1.3.7",
+    "nextTag": "v1.3.8",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "d9b2d5b7a2ca47eb19405f6a2c2a3a7b441d434e",
+        "message": "chore(release): configure npm publishing"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [1.3.8](https://github.com/3h4x/mcp-http-tools/compare/v1.3.7...v1.3.8) (DATE)\n"
+  },
+  {
+    "name": "mcp-http-tools v1.3.8..v1.3.9",
+    "version": "1.3.9",
+    "lastTag": "v1.3.8",
+    "nextTag": "v1.3.9",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "621133c2440ef339b7fd4aa7e5c6ae49357620da",
+        "message": "docs: add raw path docs reference"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [1.3.9](https://github.com/3h4x/mcp-http-tools/compare/v1.3.8...v1.3.9) (DATE)\n"
+  },
+  {
+    "name": "mcp-http-tools v1.3.9..v1.4.0",
+    "version": "1.4.0",
+    "lastTag": "v1.3.9",
+    "nextTag": "v1.4.0",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "5c1db5409af6e4fded3ac60b426060a68432fd5a",
+        "message": "ci: publish to GitHub Packages registry"
+      },
+      {
+        "hash": "888f23f94bffaa127ff214a2abd2dcee656b1568",
+        "message": "test: add callTool retry integration tests"
+      },
+      {
+        "hash": "9af42329867247235745138b8429e3a91c1c9903",
+        "message": "fix: reject unsupported tool fields"
+      },
+      {
+        "hash": "62d332151b74f188da3680636bf6b7016c36a598",
+        "message": "docs: update test count in CLAUDE.md"
+      },
+      {
+        "hash": "6c6b2dc1d65ff35fa8836d0918d3ce1edb85f045",
+        "message": "test: cover falsy defaults and null enums"
+      },
+      {
+        "hash": "a87721e5a8a59961b1c3e52322a8f1fc57816da3",
+        "message": "fix: reject unsupported param fields"
+      },
+      {
+        "hash": "3a28c9c88da64762e18a0044b79387d0c3fac2e3",
+        "message": "test: cover null config blocks and templates"
+      },
+      {
+        "hash": "f7bca2d5ca32dd1b0f5b1406631887511d92fd11",
+        "message": "fix: validate response config shape"
+      },
+      {
+        "hash": "445ef223925d53a90ca3f565c38d9784f5a71ffd",
+        "message": "docs: update CLAUDE architecture heading"
+      },
+      {
+        "hash": "2e6a29443961b48c01173a5217bf6cac95dd1c65",
+        "message": "test: cover URL placeholder substitution"
+      },
+      {
+        "hash": "cdcf5b72b4b2436c972b5ecfea86716fcee37a3b",
+        "message": "fix: reject missing required path params"
+      },
+      {
+        "hash": "70efd8c4440ed895e576acf6a9cf225a15a17846",
+        "message": "docs: update CLAUDE.md pnpm guidance"
+      },
+      {
+        "hash": "cf9243caa6c0931f2a031396f2a2732ccf145f12",
+        "message": "test: add response template and configPath tests"
+      },
+      {
+        "hash": "acc313daac0153550b5ff307db91050921d589a9",
+        "message": "fix: validate default param types"
+      },
+      {
+        "hash": "25b6dcc22894b3f224f20bac9f40aa86a9e44300",
+        "message": "test: add config validation coverage"
+      },
+      {
+        "hash": "bd568079373b4d8fa8eadf729b4c6af4d6034be7",
+        "message": "test: add retry HTTP status coverage"
+      },
+      {
+        "hash": "239c0303f086929908dfdcc4693e20662b5647af",
+        "message": "feat: add JSON response templates"
+      },
+      {
+        "hash": "65b911c7a4a889872072bac012f6289c684b9ca4",
+        "message": "docs: update test count in CLAUDE.md"
+      },
+      {
+        "hash": "fc7093aee1697b2d386212981b5404310dedcd73",
+        "message": "test: cover mixed --config flag forms"
+      },
+      {
+        "hash": "5c3e5e1f100b0474721a0044bb0a6b14c51b10cd",
+        "message": "fix: accept string enums without explicit type"
+      },
+      {
+        "hash": "24e8b15e032ca7704912b1570a1fb90351bb9011",
+        "message": "fix: validate param enum config"
+      },
+      {
+        "hash": "109e947739530205efbae0900f10b56c07a0a4df",
+        "message": "docs: update CLAUDE.md guidance"
+      },
+      {
+        "hash": "eb1e1017c336356ddabe55225e162fc9ca9fa60d",
+        "message": "test: add callTool retry behavior tests"
+      },
+      {
+        "hash": "570cab2dd5e5452efad1a5a7d5a2220e62ce9afc",
+        "message": "feat: add retry support"
+      },
+      {
+        "hash": "8fbfa9ab53cc40be7c0cea33818c87afb4c7d955",
+        "message": "docs: document bearer_env auth and update test count"
+      },
+      {
+        "hash": "913094134c2390b7773ef97940143b1f9d155446",
+        "message": "test: add config path resolution coverage"
+      },
+      {
+        "hash": "db0fb9d5f432115d2e698a0729ed42b7594e15b2",
+        "message": "feat: add bearer_env auth support"
+      },
+      {
+        "hash": "7c2678420effdfa09a8af979707430802e5c5695",
+        "message": "test: cover --config CLI edge cases"
+      },
+      {
+        "hash": "f3e4f8640a2d6f5e9131c7ed31fd7ea44156cef3",
+        "message": "docs: mention manual release trigger"
+      },
+      {
+        "hash": "3ff45f714a626e5cc393e6ecb89202506ea49cd8",
+        "message": "chore: add github actions workflows"
+      },
+      {
+        "hash": "d245e336b7e6f3fd8ac0efb94c0bb15d8ebed5f3",
+        "message": "docs: clarify config and command usage"
+      },
+      {
+        "hash": "3921ba4f2cb3c45a4d6f3452fe6bd66546e2c27b",
+        "message": "fix(config): fail on invalid explicit config"
+      },
+      {
+        "hash": "893adbe06cfdf5233e8cc828af0ad79546f595fa",
+        "message": "feat: support config path override"
+      },
+      {
+        "hash": "4ad70de2afc87b9896cf4c347645eca338e9d146",
+        "message": "ci(release): use npm trusted publishing"
+      },
+      {
+        "hash": "8802e4e7632155bc58e4d4d9a28efea87ddd5a5d",
+        "message": "ci(release): run semantic-release via pnpm"
+      },
+      {
+        "hash": "3e7a03cf741cd5784c186ba0646ec8f7a0f13ed6",
+        "message": "chore(release): wire npm publish and patch transitive deps"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "minor",
+    "notes": "# [1.4.0](https://github.com/3h4x/mcp-http-tools/compare/v1.3.9...v1.4.0) (DATE)\n\n\n### Bug Fixes\n\n* accept string enums without explicit type ([5c3e5e1](https://github.com/3h4x/mcp-http-tools/commit/5c3e5e1f100b0474721a0044bb0a6b14c51b10cd))\n* **config:** fail on invalid explicit config ([3921ba4](https://github.com/3h4x/mcp-http-tools/commit/3921ba4f2cb3c45a4d6f3452fe6bd66546e2c27b))\n* reject missing required path params ([cdcf5b7](https://github.com/3h4x/mcp-http-tools/commit/cdcf5b72b4b2436c972b5ecfea86716fcee37a3b))\n* reject unsupported param fields ([a87721e](https://github.com/3h4x/mcp-http-tools/commit/a87721e5a8a59961b1c3e52322a8f1fc57816da3))\n* reject unsupported tool fields ([9af4232](https://github.com/3h4x/mcp-http-tools/commit/9af42329867247235745138b8429e3a91c1c9903))\n* validate default param types ([acc313d](https://github.com/3h4x/mcp-http-tools/commit/acc313daac0153550b5ff307db91050921d589a9))\n* validate param enum config ([24e8b15](https://github.com/3h4x/mcp-http-tools/commit/24e8b15e032ca7704912b1570a1fb90351bb9011))\n* validate response config shape ([f7bca2d](https://github.com/3h4x/mcp-http-tools/commit/f7bca2d5ca32dd1b0f5b1406631887511d92fd11))\n\n\n### Features\n\n* add bearer_env auth support ([db0fb9d](https://github.com/3h4x/mcp-http-tools/commit/db0fb9d5f432115d2e698a0729ed42b7594e15b2))\n* add JSON response templates ([239c030](https://github.com/3h4x/mcp-http-tools/commit/239c0303f086929908dfdcc4693e20662b5647af))\n* add retry support ([570cab2](https://github.com/3h4x/mcp-http-tools/commit/570cab2dd5e5452efad1a5a7d5a2220e62ce9afc))\n* support config path override ([893adbe](https://github.com/3h4x/mcp-http-tools/commit/893adbe06cfdf5233e8cc828af0ad79546f595fa))\n"
+  },
+  {
+    "name": "mcp-http-tools v1.4.0..v1.4.1",
+    "version": "1.4.1",
+    "lastTag": "v1.4.0",
+    "nextTag": "v1.4.1",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "3ff928209e62098b9a6085e7151bc69108a5f8f0",
+        "message": "ci: update GitHub Actions to checkout@v6"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [1.4.1](https://github.com/3h4x/mcp-http-tools/compare/v1.4.0...v1.4.1) (DATE)\n"
+  },
+  {
+    "name": "mcp-http-tools v1.4.1..v1.5.0",
+    "version": "1.5.0",
+    "lastTag": "v1.4.1",
+    "nextTag": "v1.5.0",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "940e4ac0348dd55a1fb8de48646b314af70d96ce",
+        "message": "feat: add --http transport with bearer-token auth\n\nAdds a StreamableHTTPServerTransport-backed --http mode alongside the\nexisting stdio transport, gated by verifyBearerToken (Task 1). Serves\nMCP at /mcp on 127.0.0.1:${MCP_HTTP_PORT:-3000}; requires\nMCP_HTTP_TOKEN and rejects unauthenticated requests with 401.\n\nindex.js now builds a fresh Server+StreamableHTTPServerTransport pair\nper HTTP request (factored into createMcpServer()) rather than reusing\none shared instance, matching the SDK's own stateless-transport\nexample: Server#connect() throws \"Already connected to a transport\" if\nreused before the previous transport's close() has unset it, so a\nsingle shared instance breaks on any request after the first.\n\nAlso fixes a pre-existing test.js bug where the \"integration\" describe\nblock's afterEach did `delete globalThis.fetch` instead of restoring\nthe captured realFetch reference -- since Node's global fetch is a\nlazily-initialized property that doesn't come back after being deleted\nonce overwritten, this permanently broke the bare `fetch` global for\nevery describe block that runs afterward in the same process,\nincluding the new HTTP transport tests."
+      },
+      {
+        "hash": "c143e58af77ee4aae5b5964f2b503986b74f5fc5",
+        "message": "feat: add verifyBearerToken helper for HTTP transport auth"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "minor",
+    "notes": "# [1.5.0](https://github.com/3h4x/mcp-http-tools/compare/v1.4.1...v1.5.0) (DATE)\n\n\n### Features\n\n* add --http transport with bearer-token auth ([940e4ac](https://github.com/3h4x/mcp-http-tools/commit/940e4ac0348dd55a1fb8de48646b314af70d96ce))\n* add verifyBearerToken helper for HTTP transport auth ([c143e58](https://github.com/3h4x/mcp-http-tools/commit/c143e58af77ee4aae5b5964f2b503986b74f5fc5))\n"
+  },
+  {
+    "name": "mcp-http-tools v1.5.0..v1.6.0",
+    "version": "1.6.0",
+    "lastTag": "v1.5.0",
+    "nextTag": "v1.6.0",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "4ead0f79809f7c0bd109ddf21a0abf8a4a9cc26b",
+        "message": "feat: add composite tools (requests array, fan out + merge)\n\nA tool can now declare `requests:` instead of a single `url:` -- every\nrequest in the array runs in PARALLEL and the results merge into one JSON\nobject keyed by each request's `key`. Built for \"give me the whole\npicture\" tools: a project overview pulling k8s state, logs, metrics, and\nerror data in one call instead of five round-trips, one per data source.\n\n- `url`/`requests` are mutually exclusive on a tool.\n- Each request entry needs a unique `key` plus its own\n  url/method/headers/params/response/timeout/retry -- the exact same\n  fields a regular tool uses, just nested one level down. No implicit\n  param inheritance: a request only sees the args it explicitly declares.\n- One request failing (timeout, non-2xx, network error) does not fail the\n  others -- its key gets `{ \"error\": \"...\" }` in the merged result, so\n  partial data beats an all-or-nothing failure for an overview tool.\n- validateConfig's per-request validation (url/params/headers/auth/\n  response/timeout/retry) is refactored into validateRequestShape(),\n  shared by both a regular tool and each composite request entry --\n  avoids duplicating ~180 lines of validation logic.\n- callTool()'s single-request execution is renamed to callSingleRequest()\n  and reused by the new callCompositeTool(), which fans out via\n  Promise.allSettled and merges by key.\n\n12 new tests, all against real local HTTP servers per this repo's\ntesting rule (no fetch mocking) -- including one asserting genuinely\nparallel dispatch (max concurrent in-flight requests, not just total wall\ntime, since only checking wall time could pass on an accidental\nsemi-parallel implementation too).\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_018S2f9xk5Ai5SaFfwCFdF8F"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "minor",
+    "notes": "# [1.6.0](https://github.com/3h4x/mcp-http-tools/compare/v1.5.0...v1.6.0) (DATE)\n\n\n### Features\n\n* add composite tools (requests array, fan out + merge) ([4ead0f7](https://github.com/3h4x/mcp-http-tools/commit/4ead0f79809f7c0bd109ddf21a0abf8a4a9cc26b))\n"
+  },
+  {
+    "name": "mcp-http-tools v1.6.0..v2.1.0",
+    "version": "2.1.0",
+    "lastTag": "v1.6.0",
+    "nextTag": "v2.1.0",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "1eaf540a986413553365bfcb1d486f3f67b7b914",
+        "message": "feat: MCP_HTTP_HOST env var, defaulting to 127.0.0.1\n\nNeeded to run --http mode inside a container: a Service/reverse proxy\nroutes to the container's own IP, not the host's loopback, so binding\n127.0.0.1 unconditionally makes the app unreachable while it logs that\nit's listening. Loopback stays the default for the existing bare-host\ndeploy behind a local nginx."
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "minor",
+    "notes": "# [2.1.0](https://github.com/3h4x/mcp-http-tools/compare/v1.6.0...v2.1.0) (DATE)\n\n\n### Features\n\n* MCP_HTTP_HOST env var, defaulting to 127.0.0.1 ([1eaf540](https://github.com/3h4x/mcp-http-tools/commit/1eaf540a986413553365bfcb1d486f3f67b7b914))\n"
+  },
+  {
+    "name": "mcp-http-tools v2.1.0..v2.1.1",
+    "version": "2.1.1",
+    "lastTag": "v2.1.0",
+    "nextTag": "v2.1.1",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "a72fb65722d9baee690d3b613c2460be616145a3",
+        "message": "Merge pull request #1 from 3h4x/fix/get-array-query-repeated-keys\n\nfix: serialize array GET params as repeated query keys, not JSON"
+      },
+      {
+        "hash": "9a29d1b3eb570973e23f787bb8ec30996a36e5fa",
+        "message": "fix: serialize array GET params as repeated query keys, not JSON\n\nbuildRequest() was calling JSON.stringify on array-valued query params,\nproducing e.g. ?span_ids=[\"a\",\"b\"] instead of the standard repeated-key\nform (?span_ids=a&span_ids=b). Frameworks like FastAPI's\nOptional[list[str]] parse the former as a one-item list containing the\nliteral JSON string, not two items -- silently breaking any GET tool\nwith a type: array param against such a backend (surfaced while wiring\nArize Phoenix's REST API, which declares several Optional[list[str]]\nquery params, into infra's infra-mcp).\n\nNon-array object params keep JSON-string serialization, since there's\nno standard repeated-key convention for those.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [2.1.1](https://github.com/3h4x/mcp-http-tools/compare/v2.1.0...v2.1.1) (DATE)\n\n\n### Bug Fixes\n\n* serialize array GET params as repeated query keys, not JSON ([9a29d1b](https://github.com/3h4x/mcp-http-tools/commit/9a29d1b3eb570973e23f787bb8ec30996a36e5fa))\n"
+  },
+  {
+    "name": "mcp-http-tools v2.1.1..v2.2.0",
+    "version": "2.2.0",
+    "lastTag": "v2.1.1",
+    "nextTag": "v2.2.0",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "10c087d1b2fe4bfaa9995d1c14861889a076d759",
+        "message": "Merge pull request #2 from 3h4x/feat/scoped-access-tokens\n\nfeat: param pattern/maxLength, enforced enum, strict_args, scoped access tokens"
+      },
+      {
+        "hash": "dd829b5583afb7e88217cfc3122c6a9ba93bb86f",
+        "message": "feat: enforce param constraints, add pattern/maxLength, scoped access tokens\n\nThe SDK does not validate arguments, so enum was only ever a hint and\nextra GET args were appended to the query string. Enforce enum/pattern/\nmaxLength at call time, add strict_args, and let extra bearer tokens be\nrestricted to a tool allowlist so one endpoint can serve narrower scopes.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "minor",
+    "notes": "# [2.2.0](https://github.com/3h4x/mcp-http-tools/compare/v2.1.1...v2.2.0) (DATE)\n\n\n### Features\n\n* enforce param constraints, add pattern/maxLength, scoped access tokens ([dd829b5](https://github.com/3h4x/mcp-http-tools/commit/dd829b5583afb7e88217cfc3122c6a9ba93bb86f))\n"
+  },
+  {
+    "name": "mcp-http-tools v2.2.0..v2.3.0",
+    "version": "2.3.0",
+    "lastTag": "v2.2.0",
+    "nextTag": "v2.3.0",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "7ac5982b524b8ad738ff2050e3a4b31576ad69ca",
+        "message": "Merge pull request #3 from 3h4x/feat/per-tool-strict"
+      },
+      {
+        "hash": "dbef93e820eba38a991a8b7625507dc1d430cdb2",
+        "message": "feat: per-tool strict argument validation\n\nLets one config opt only its security-relevant tools into strict\nargument checking, instead of all-or-nothing strict_args.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "minor",
+    "notes": "# [2.3.0](https://github.com/3h4x/mcp-http-tools/compare/v2.2.0...v2.3.0) (DATE)\n\n\n### Features\n\n* per-tool strict argument validation ([dbef93e](https://github.com/3h4x/mcp-http-tools/commit/dbef93e820eba38a991a8b7625507dc1d430cdb2))\n"
+  },
+  {
+    "name": "mcp-http-tools v2.3.0..v2.4.0",
+    "version": "2.4.0",
+    "lastTag": "v2.3.0",
+    "nextTag": "v2.4.0",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "9d69366edca2447d40bc033f976cc66abd9ec571",
+        "message": "Merge pull request #4 from 3h4x/feat/param-minimum-maximum\n\nfeat: minimum/maximum on number and integer params"
+      },
+      {
+        "hash": "eb4ce80a761859b6e84db6ac6e97b83a83c1a138",
+        "message": "feat: minimum/maximum on number and integer params\n\nValidated at startup (numeric params only, finite, min <= max, default in\nrange), advertised in the tool's inputSchema, and enforced on every call\nbefore any request -- strict or not; a non-strict numeric string is still\nrange-checked and a non-number fails.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "minor",
+    "notes": "# [2.4.0](https://github.com/3h4x/mcp-http-tools/compare/v2.3.0...v2.4.0) (DATE)\n\n\n### Features\n\n* minimum/maximum on number and integer params ([eb4ce80](https://github.com/3h4x/mcp-http-tools/commit/eb4ce80a761859b6e84db6ac6e97b83a83c1a138))\n"
+  },
+  {
+    "name": "mcp-http-tools v2.4.0..v2.4.1",
+    "version": "2.4.1",
+    "lastTag": "v2.4.0",
+    "nextTag": "v2.4.1",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "eb38eb4c69243e0a50618a4cd1d332f3adb3197b",
+        "message": "chore: Dependabot version and security updates, grouped (#5)\n\nCo-authored-by: Claude Opus 5.5 <noreply@anthropic.com>"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [2.4.1](https://github.com/3h4x/mcp-http-tools/compare/v2.4.0...v2.4.1) (DATE)\n"
+  },
+  {
+    "name": "mcp-http-tools v2.4.1..v2.4.2",
+    "version": "2.4.2",
+    "lastTag": "v2.4.1",
+    "nextTag": "v2.4.2",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "69a904236d6f0c8589580b17d836e20a8a57239f",
+        "message": "Merge pull request #7 from 3h4x/dependabot/npm_and_yarn/npm-minor-patch-74928cacb4\n\nfix(deps): bump the npm-minor-patch group across 1 directory with 4 updates"
+      },
+      {
+        "hash": "d1f3258cbb4c4ee86e0db7762f9d26561cb4db91",
+        "message": "fix(deps): bump the npm-minor-patch group across 1 directory with 4 updates\n\nBumps the npm-minor-patch group with 4 updates in the / directory: [@modelcontextprotocol/sdk](https://github.com/modelcontextprotocol/typescript-sdk), [@semantic-release/github](https://github.com/semantic-release/github), [@semantic-release/npm](https://github.com/semantic-release/npm) and [semantic-release](https://github.com/semantic-release/semantic-release).\n\n\nUpdates `@modelcontextprotocol/sdk` from 1.29.0 to 1.30.0\n- [Release notes](https://github.com/modelcontextprotocol/typescript-sdk/releases)\n- [Commits](https://github.com/modelcontextprotocol/typescript-sdk/compare/v1.29.0...1.30.0)\n\nUpdates `@semantic-release/github` from 12.0.8 to 12.0.10\n- [Release notes](https://github.com/semantic-release/github/releases)\n- [Commits](https://github.com/semantic-release/github/compare/v12.0.8...v12.0.10)\n\nUpdates `@semantic-release/npm` from 13.1.5 to 13.2.0\n- [Release notes](https://github.com/semantic-release/npm/releases)\n- [Commits](https://github.com/semantic-release/npm/compare/v13.1.5...v13.2.0)\n\nUpdates `semantic-release` from 25.0.3 to 25.0.9\n- [Release notes](https://github.com/semantic-release/semantic-release/releases)\n- [Commits](https://github.com/semantic-release/semantic-release/compare/v25.0.3...v25.0.9)\n\n---\nupdated-dependencies:\n- dependency-name: \"@modelcontextprotocol/sdk\"\n  dependency-version: 1.30.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-minor-patch\n- dependency-name: \"@semantic-release/github\"\n  dependency-version: 12.0.10\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-minor-patch\n- dependency-name: \"@semantic-release/npm\"\n  dependency-version: 13.2.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: npm-minor-patch\n- dependency-name: semantic-release\n  dependency-version: 25.0.9\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-minor-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [2.4.2](https://github.com/3h4x/mcp-http-tools/compare/v2.4.1...v2.4.2) (DATE)\n\n\n### Bug Fixes\n\n* **deps:** bump the npm-minor-patch group across 1 directory with 4 updates ([d1f3258](https://github.com/3h4x/mcp-http-tools/commit/d1f3258cbb4c4ee86e0db7762f9d26561cb4db91))\n"
+  },
+  {
+    "name": "mcp-http-tools v2.4.2..v2.4.3",
+    "version": "2.4.3",
+    "lastTag": "v2.4.2",
+    "nextTag": "v2.4.3",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "456e185d83be84244ef7c78259c82f68d1eecc39",
+        "message": "Merge pull request #9 from 3h4x/dependabot/npm_and_yarn/npm-security-56e86fd9c9\n\nfix(deps): bump js-yaml from 4.1.1 to 4.3.2 in the npm-security group across 1 directory"
+      },
+      {
+        "hash": "b5f9ef4ac06e621b7c7f6029b577cfbe6638a9e2",
+        "message": "fix(deps): bump js-yaml in the npm-security group across 1 directory\n\nBumps the npm-security group with 1 update in the / directory: [js-yaml](https://github.com/nodeca/js-yaml).\n\n\nUpdates `js-yaml` from 4.1.1 to 4.3.2\n- [Changelog](https://github.com/nodeca/js-yaml/blob/4.3.2/CHANGELOG.md)\n- [Commits](https://github.com/nodeca/js-yaml/compare/4.1.1...4.3.2)\n\n---\nupdated-dependencies:\n- dependency-name: js-yaml\n  dependency-version: 4.3.2\n  dependency-type: direct:production\n  dependency-group: npm-security\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [2.4.3](https://github.com/3h4x/mcp-http-tools/compare/v2.4.2...v2.4.3) (DATE)\n\n\n### Bug Fixes\n\n* **deps:** bump js-yaml in the npm-security group across 1 directory ([b5f9ef4](https://github.com/3h4x/mcp-http-tools/commit/b5f9ef4ac06e621b7c7f6029b577cfbe6638a9e2))\n"
+  },
+  {
+    "name": "mcp-http-tools v2.4.3..v2.4.4",
+    "version": "2.4.4",
+    "lastTag": "v2.4.3",
+    "nextTag": "v2.4.4",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "d53fbcf4c45fd1b101ed87fcf6c24852eab40926",
+        "message": "Merge pull request #6 from 3h4x/dependabot/github_actions/actions-49bcf89c69\n\nci: bump the actions group with 3 updates"
+      },
+      {
+        "hash": "62aab1cbd66a9274c9bc3d3500f89469608ff11b",
+        "message": "ci: bump the actions group with 3 updates\n\nBumps the actions group with 3 updates: [actions/checkout](https://github.com/actions/checkout), [actions/setup-node](https://github.com/actions/setup-node) and [actions/labeler](https://github.com/actions/labeler).\n\n\nUpdates `actions/checkout` from 6 to 7\n- [Release notes](https://github.com/actions/checkout/releases)\n- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/actions/checkout/compare/v6...v7)\n\nUpdates `actions/setup-node` from 6 to 7\n- [Release notes](https://github.com/actions/setup-node/releases)\n- [Commits](https://github.com/actions/setup-node/compare/v6...v7)\n\nUpdates `actions/labeler` from 6 to 7\n- [Release notes](https://github.com/actions/labeler/releases)\n- [Commits](https://github.com/actions/labeler/compare/v6...v7)\n\n---\nupdated-dependencies:\n- dependency-name: actions/checkout\n  dependency-version: '7'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n  dependency-group: actions\n- dependency-name: actions/setup-node\n  dependency-version: '7'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n  dependency-group: actions\n- dependency-name: actions/labeler\n  dependency-version: '7'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n  dependency-group: actions\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [2.4.4](https://github.com/3h4x/mcp-http-tools/compare/v2.4.3...v2.4.4) (DATE)\n"
+  },
+  {
+    "name": "mcp-http-tools v2.4.4..v2.4.5",
+    "version": "2.4.5",
+    "lastTag": "v2.4.4",
+    "nextTag": "v2.4.5",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "dcf793e334cee30514cf4074712ce403a3174924",
+        "message": "Merge pull request #10 from 3h4x/chore/dependabot-one-pr\n\nchore(dependabot): one grouped PR per repo, no version-update majors"
+      },
+      {
+        "hash": "6d617e2d1733c129b9249fe083d1896f3ebd7c16",
+        "message": "chore(dependabot): one grouped PR per repo, no version-update majors\n\nAll version updates join one multi-ecosystem group with\nopen-pull-requests-limit 1, and semver-major version updates are ignored.\nSecurity updates stay grouped per ecosystem. The config validates against\nthe SchemaStore dependabot-2.0 schema.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [2.4.5](https://github.com/3h4x/mcp-http-tools/compare/v2.4.4...v2.4.5) (DATE)\n"
+  },
+  {
+    "name": "mcp-http-tools v2.4.5..v2.4.6",
+    "version": "2.4.6",
+    "lastTag": "v2.4.5",
+    "nextTag": "v2.4.6",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "67dae994e67cf740ea1dfb491abc1e779175f26c",
+        "message": "Merge pull request #11 from 3h4x/fix/dependabot-group-limit\n\nfix(dependabot): open-pull-requests-limit on the group, not its entries"
+      },
+      {
+        "hash": "008bedf7ec934d93173af29a66b0957c3d0755c0",
+        "message": "fix(dependabot): set open-pull-requests-limit on the multi-ecosystem group, not its entries\n\nDependabot rejects the per-entry key when entries join a multi-ecosystem group.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [2.4.6](https://github.com/3h4x/mcp-http-tools/compare/v2.4.5...v2.4.6) (DATE)\n\n\n### Bug Fixes\n\n* **dependabot:** set open-pull-requests-limit on the multi-ecosystem group, not its entries ([008bedf](https://github.com/3h4x/mcp-http-tools/commit/008bedf7ec934d93173af29a66b0957c3d0755c0))\n"
+  },
+  {
+    "name": "mcp-http-tools v2.4.6..v2.4.7",
+    "version": "2.4.7",
+    "lastTag": "v2.4.6",
+    "nextTag": "v2.4.7",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "707987e8677cb2046eeda196b41609343b5b757d",
+        "message": "Merge pull request #12 from 3h4x/dependabot/dependencies-8c32d8c355\n\nfix(deps): Bump the \"dependencies\" group with 1 update across multiple ecosystems"
+      },
+      {
+        "hash": "ed765ca08fc558521280453b124c2d8fad88816f",
+        "message": "fix(deps): bump @modelcontextprotocol/sdk\n\nBumps the dependencies group with 1 update in the / directory: [@modelcontextprotocol/sdk](https://github.com/modelcontextprotocol/typescript-sdk).\n\n\nUpdates `@modelcontextprotocol/sdk` from 1.30.0 to 1.30.1\n- [Release notes](https://github.com/modelcontextprotocol/typescript-sdk/releases)\n- [Commits](https://github.com/modelcontextprotocol/typescript-sdk/compare/1.30.0...1.30.1)\n\n---\nupdated-dependencies:\n- dependency-name: \"@modelcontextprotocol/sdk\"\n  dependency-version: 1.30.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: dependencies\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [2.4.7](https://github.com/3h4x/mcp-http-tools/compare/v2.4.6...v2.4.7) (DATE)\n\n\n### Bug Fixes\n\n* **deps:** bump @modelcontextprotocol/sdk ([ed765ca](https://github.com/3h4x/mcp-http-tools/commit/ed765ca08fc558521280453b124c2d8fad88816f))\n"
+  },
+  {
+    "name": "mcp-http-tools v2.4.7..v2.4.8",
+    "version": "2.4.8",
+    "lastTag": "v2.4.7",
+    "nextTag": "v2.4.8",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "313bc9ff2f082b7c1d619720522e03600e354bb7",
+        "message": "chore(dependabot): per-ecosystem groups instead of multi-ecosystem-groups\n\nSince the move to multi-ecosystem-groups on 2026-09-30, Dependabot ignored each\nentry's applies-to: security-updates group and opened one PR per advisory, each\nconflicting with the others' lockfile. Every entry now has its own schedule and\ntwo groups, <eco>-minor-patch (version updates) and <eco>-security.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [2.4.8](https://github.com/3h4x/mcp-http-tools/compare/v2.4.7...v2.4.8) (DATE)\n"
+  },
+  {
+    "name": "mcp-http-tools v2.4.8..v2.4.9",
+    "version": "2.4.9",
+    "lastTag": "v2.4.8",
+    "nextTag": "v2.4.9",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "d1650fd54fe0ecd18bed8b0d424e1040270afdd4",
+        "message": "chore(dependabot): drop update-types from the minor-patch groups\n\nA SHA-pinned action or a Docker digest bump is neither minor nor patch, so\nthe filter sent it to a PR of its own (seo-tools #285). Majors are already\nignored on every entry, so the filter added nothing.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [2.4.9](https://github.com/3h4x/mcp-http-tools/compare/v2.4.8...v2.4.9) (DATE)\n"
+  },
+  {
+    "name": "mcp-http-tools v2.4.9..v2.4.10",
+    "version": "2.4.10",
+    "lastTag": "v2.4.9",
+    "nextTag": "v2.4.10",
+    "repositoryUrl": "https://github.com/3h4x/mcp-http-tools",
+    "commits": [
+      {
+        "hash": "5085c0b1cc75f51f4ce4d0f7279a58d470255573",
+        "message": "fix(deps): bump @modelcontextprotocol/sdk (#13)\n\nBumps the npm-minor-patch group with 1 update in the / directory: [@modelcontextprotocol/sdk](https://github.com/modelcontextprotocol/typescript-sdk).\n\n\nUpdates `@modelcontextprotocol/sdk` from 1.30.1 to 1.32.0\n- [Release notes](https://github.com/modelcontextprotocol/typescript-sdk/releases)\n- [Commits](https://github.com/modelcontextprotocol/typescript-sdk/compare/1.30.1...1.32.0)\n\n---\nupdated-dependencies:\n- dependency-name: \"@modelcontextprotocol/sdk\"\n  dependency-version: 1.32.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-minor-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [2.4.10](https://github.com/3h4x/mcp-http-tools/compare/v2.4.9...v2.4.10) (DATE)\n\n\n### Bug Fixes\n\n* **deps:** bump @modelcontextprotocol/sdk ([#13](https://github.com/3h4x/mcp-http-tools/issues/13)) ([5085c0b](https://github.com/3h4x/mcp-http-tools/commit/5085c0b1cc75f51f4ce4d0f7279a58d470255573))\n"
+  }
+]

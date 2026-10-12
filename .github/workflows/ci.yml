@@ -1,0 +1,62 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24
+      - name: No runtime dependencies
+        run: |
+          # The point of this action: nothing to install, nothing to audit.
+          test ! -e package-lock.json && test ! -e pnpm-lock.yaml && test ! -e node_modules
+          if grep -rhoE "from '[^.][^']*'" src | grep -vE "from 'node:"; then echo "non-builtin import in src/"; exit 1; fi
+      - run: node --test 'test/*.test.mjs'
+
+  dry-run:
+    # The action against its own repository, as a consumer would run it.
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+      - id: release
+        uses: ./
+        with:
+          dry-run: true
+      - run: echo "next version would be '${{ steps.release.outputs.new_release_version }}'"
+
+  release:
+    # Dogfooding: the action releases itself once the tests pass on main.
+    needs: [test, dry-run]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    concurrency: release
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+      - id: release
+        uses: ./
+      - name: Move the major tag
+        if: steps.release.outputs.new_release_published == 'true'
+        run: |
+          major="v${{ steps.release.outputs.new_release_major_version }}"
+          git tag -f "$major" "${{ steps.release.outputs.new_release_git_tag }}"
+          git push -f origin "refs/tags/$major"

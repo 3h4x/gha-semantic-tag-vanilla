@@ -1,0 +1,700 @@
+[
+  {
+    "name": "first-release",
+    "version": "1.0.0",
+    "nextTag": "v1.0.0",
+    "commits": [
+      {
+        "hash": "1111111111111111111111111111111111111111",
+        "message": "feat: initial"
+      },
+      {
+        "hash": "2222222222222222222222222222222222222222",
+        "message": "chore: setup"
+      }
+    ],
+    "releaseType": "minor",
+    "notes": "# 1.0.0 (DATE)\n\n\n### Features\n\n* initial ([1111111](https://github.com/o/r/commit/1111111111111111111111111111111111111111))\n"
+  },
+  {
+    "name": "patch-header",
+    "version": "1.0.1",
+    "lastTag": "v1.0.0",
+    "nextTag": "v1.0.1",
+    "commits": [
+      {
+        "hash": "3333333333333333333333333333333333333333",
+        "message": "fix: a bug"
+      }
+    ],
+    "releaseType": "patch",
+    "notes": "## [1.0.1](https://github.com/o/r/compare/v1.0.0...v1.0.1) (DATE)\n\n\n### Bug Fixes\n\n* a bug ([3333333](https://github.com/o/r/commit/3333333333333333333333333333333333333333))\n"
+  },
+  {
+    "name": "docs-only-default-rules",
+    "version": "1.0.1",
+    "lastTag": "v1.0.0",
+    "nextTag": "v1.0.1",
+    "commits": [
+      {
+        "hash": "4444444444444444444444444444444444444444",
+        "message": "docs: readme"
+      },
+      {
+        "hash": "5555555555555555555555555555555555555555",
+        "message": "chore: deps"
+      }
+    ],
+    "releaseType": null,
+    "notes": "## [1.0.1](https://github.com/o/r/compare/v1.0.0...v1.0.1) (DATE)\n"
+  },
+  {
+    "name": "docs-only-custom-rules",
+    "version": "1.0.1",
+    "lastTag": "v1.0.0",
+    "nextTag": "v1.0.1",
+    "commits": [
+      {
+        "hash": "6666666666666666666666666666666666666666",
+        "message": "docs: readme"
+      },
+      {
+        "hash": "7777777777777777777777777777777777777777",
+        "message": "chore: deps"
+      },
+      {
+        "hash": "8888888888888888888888888888888888888888",
+        "message": "ci: bump"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [1.0.1](https://github.com/o/r/compare/v1.0.0...v1.0.1) (DATE)\n"
+  },
+  {
+    "name": "bang-not-breaking",
+    "version": "1.1.0",
+    "lastTag": "v1.0.0",
+    "nextTag": "v1.1.0",
+    "commits": [
+      {
+        "hash": "9999999999999999999999999999999999999999",
+        "message": "feat!: big change"
+      },
+      {
+        "hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "message": "feat: small"
+      }
+    ],
+    "releaseType": "minor",
+    "notes": "# [1.1.0](https://github.com/o/r/compare/v1.0.0...v1.1.0) (DATE)\n\n\n### Features\n\n* small ([aaaaaaa](https://github.com/o/r/commit/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa))\n"
+  },
+  {
+    "name": "bang-custom-rules",
+    "version": "1.0.1",
+    "lastTag": "v1.0.0",
+    "nextTag": "v1.0.1",
+    "commits": [
+      {
+        "hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "message": "feat!: big change"
+      },
+      {
+        "hash": "cccccccccccccccccccccccccccccccccccccccc",
+        "message": "fix: small"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "breaking": true,
+          "release": "major"
+        },
+        {
+          "type": "feat",
+          "release": "minor"
+        },
+        {
+          "type": "fix",
+          "release": "patch"
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "perf",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        },
+        {
+          "type": "build",
+          "release": "patch"
+        },
+        {
+          "type": "ci",
+          "release": "patch"
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [1.0.1](https://github.com/o/r/compare/v1.0.0...v1.0.1) (DATE)\n\n\n### Bug Fixes\n\n* small ([ccccccc](https://github.com/o/r/commit/cccccccccccccccccccccccccccccccccccccccc))\n"
+  },
+  {
+    "name": "breaking-footer",
+    "version": "2.0.0",
+    "lastTag": "v1.0.0",
+    "nextTag": "v2.0.0",
+    "commits": [
+      {
+        "hash": "dddddddddddddddddddddddddddddddddddddddd",
+        "message": "feat(core): new api\n\nBREAKING CHANGE: old api removed\n\nSee docs."
+      },
+      {
+        "hash": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+        "message": "fix: thing"
+      }
+    ],
+    "releaseType": "major",
+    "notes": "# [2.0.0](https://github.com/o/r/compare/v1.0.0...v2.0.0) (DATE)\n\n\n### Bug Fixes\n\n* thing ([eeeeeee](https://github.com/o/r/commit/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee))\n\n\n### Features\n\n* **core:** new api ([ddddddd](https://github.com/o/r/commit/dddddddddddddddddddddddddddddddddddddddd))\n\n\n### BREAKING CHANGES\n\n* **core:** old api removed\n\nSee docs.\n"
+  },
+  {
+    "name": "breaking-footer-colon-less",
+    "version": "2.0.0",
+    "lastTag": "v1.0.0",
+    "nextTag": "v2.0.0",
+    "commits": [
+      {
+        "hash": "ffffffffffffffffffffffffffffffffffffffff",
+        "message": "fix: x\n\nBREAKING CHANGE removes y"
+      }
+    ],
+    "releaseType": "major",
+    "notes": "# [2.0.0](https://github.com/o/r/compare/v1.0.0...v2.0.0) (DATE)\n\n\n### Bug Fixes\n\n* x ([fffffff](https://github.com/o/r/commit/ffffffffffffffffffffffffffffffffffffffff))\n\n\n### BREAKING CHANGES\n\n* removes y\n"
+  },
+  {
+    "name": "breaking-hyphen-keyword",
+    "version": "1.1.0",
+    "lastTag": "v1.0.0",
+    "nextTag": "v1.1.0",
+    "commits": [
+      {
+        "hash": "1010101010101010101010101010101010101010",
+        "message": "feat: x\n\nBREAKING-CHANGE: not angular"
+      }
+    ],
+    "releaseType": "minor",
+    "notes": "# [1.1.0](https://github.com/o/r/compare/v1.0.0...v1.1.0) (DATE)\n\n\n### Features\n\n* x ([1010101](https://github.com/o/r/commit/1010101010101010101010101010101010101010))\n"
+  },
+  {
+    "name": "multiple-notes",
+    "version": "2.0.0",
+    "lastTag": "v1.0.0",
+    "nextTag": "v2.0.0",
+    "commits": [
+      {
+        "hash": "1111111111111111111111111111111111111111",
+        "message": "feat(a): one\n\nBREAKING CHANGE: first"
+      },
+      {
+        "hash": "1212121212121212121212121212121212121212",
+        "message": "fix(b): two\n\nBREAKING CHANGE: second\nline two\n\nCloses #3"
+      }
+    ],
+    "releaseType": "major",
+    "notes": "# [2.0.0](https://github.com/o/r/compare/v1.0.0...v2.0.0) (DATE)\n\n\n### Bug Fixes\n\n* **b:** two ([1212121](https://github.com/o/r/commit/1212121212121212121212121212121212121212)), closes [#3](https://github.com/o/r/issues/3)\n\n\n### Features\n\n* **a:** one ([1111111](https://github.com/o/r/commit/1111111111111111111111111111111111111111))\n\n\n### BREAKING CHANGES\n\n* **a:** first\n* **b:** second\nline two\n"
+  },
+  {
+    "name": "revert-pair",
+    "version": "1.0.1",
+    "lastTag": "v1.0.0",
+    "nextTag": "v1.0.1",
+    "commits": [
+      {
+        "hash": "1313131313131313131313131313131313131313",
+        "message": "revert: feat: thing\n\nThis reverts commit 6363636363636363636363636363636363636363."
+      },
+      {
+        "hash": "6363636363636363636363636363636363636363",
+        "message": "feat: thing"
+      },
+      {
+        "hash": "1414141414141414141414141414141414141414",
+        "message": "fix: other"
+      }
+    ],
+    "releaseType": "patch",
+    "notes": "## [1.0.1](https://github.com/o/r/compare/v1.0.0...v1.0.1) (DATE)\n\n\n### Bug Fixes\n\n* other ([1414141](https://github.com/o/r/commit/1414141414141414141414141414141414141414))\n"
+  },
+  {
+    "name": "revert-unpaired",
+    "version": "1.0.1",
+    "lastTag": "v1.0.0",
+    "nextTag": "v1.0.1",
+    "commits": [
+      {
+        "hash": "1515151515151515151515151515151515151515",
+        "message": "Revert \"feat: old thing\"\n\nThis reverts commit abcdef1234567."
+      }
+    ],
+    "releaseType": "patch",
+    "notes": "## [1.0.1](https://github.com/o/r/compare/v1.0.0...v1.0.1) (DATE)\n\n\n### Reverts\n\n* Revert \"feat: old thing\" ([1515151](https://github.com/o/r/commit/1515151515151515151515151515151515151515))\n"
+  },
+  {
+    "name": "revert-git-style",
+    "version": "1.0.1",
+    "lastTag": "v1.0.0",
+    "nextTag": "v1.0.1",
+    "commits": [
+      {
+        "hash": "1616161616161616161616161616161616161616",
+        "message": "Revert \"fix: bug\"\n\nThis reverts commit 6262626262626262626262626262626262626262."
+      },
+      {
+        "hash": "6262626262626262626262626262626262626262",
+        "message": "fix: bug"
+      },
+      {
+        "hash": "1717171717171717171717171717171717171717",
+        "message": "perf: speed"
+      }
+    ],
+    "releaseType": "patch",
+    "notes": "## [1.0.1](https://github.com/o/r/compare/v1.0.0...v1.0.1) (DATE)\n\n\n### Performance Improvements\n\n* speed ([1717171](https://github.com/o/r/commit/1717171717171717171717171717171717171717))\n"
+  },
+  {
+    "name": "references",
+    "version": "1.1.0",
+    "lastTag": "v1.0.0",
+    "nextTag": "v1.1.0",
+    "commits": [
+      {
+        "hash": "1818181818181818181818181818181818181818",
+        "message": "feat: add (#12)"
+      },
+      {
+        "hash": "1919191919191919191919191919191919191919",
+        "message": "fix: x\n\nFixes #1, closes #2\nresolves owner/other#3"
+      },
+      {
+        "hash": "1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a",
+        "message": "fix: gh prefix\n\nfixes gh-9"
+      },
+      {
+        "hash": "1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b",
+        "message": "fix: url ref\n\nsee https://github.com/o/r/issues/4"
+      }
+    ],
+    "releaseType": "minor",
+    "notes": "# [1.1.0](https://github.com/o/r/compare/v1.0.0...v1.1.0) (DATE)\n\n\n### Bug Fixes\n\n* gh prefix ([1a1a1a1](https://github.com/o/r/commit/1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a)), closes [#9](https://github.com/o/r/issues/9)\n* url ref ([1b1b1b1](https://github.com/o/r/commit/1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b))\n* x ([1919191](https://github.com/o/r/commit/1919191919191919191919191919191919191919)), closes [#1](https://github.com/o/r/issues/1) [#2](https://github.com/o/r/issues/2) [owner/other#3](https://github.com/owner/other/issues/3)\n\n\n### Features\n\n* add ([#12](https://github.com/o/r/issues/12)) ([1818181](https://github.com/o/r/commit/1818181818181818181818181818181818181818))\n"
+  },
+  {
+    "name": "mentions",
+    "version": "1.0.1",
+    "lastTag": "v1.0.0",
+    "nextTag": "v1.0.1",
+    "commits": [
+      {
+        "hash": "1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c",
+        "message": "fix: thanks @alice and @bob/team, not `@code`"
+      },
+      {
+        "hash": "1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d",
+        "message": "fix: email a@b.com"
+      }
+    ],
+    "releaseType": "patch",
+    "notes": "## [1.0.1](https://github.com/o/r/compare/v1.0.0...v1.0.1) (DATE)\n\n\n### Bug Fixes\n\n* email a@b.com ([1d1d1d1](https://github.com/o/r/commit/1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d))\n* thanks [@alice](https://github.com/alice) and @bob/team, not `@code` ([1c1c1c1](https://github.com/o/r/commit/1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c))\n"
+  },
+  {
+    "name": "scopes-and-sort",
+    "version": "1.1.0",
+    "lastTag": "v1.0.0",
+    "nextTag": "v1.1.0",
+    "commits": [
+      {
+        "hash": "1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e",
+        "message": "feat(zeta): z"
+      },
+      {
+        "hash": "1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f",
+        "message": "feat(alpha): a"
+      },
+      {
+        "hash": "2020202020202020202020202020202020202020",
+        "message": "feat: plain"
+      },
+      {
+        "hash": "2121212121212121212121212121212121212121",
+        "message": "feat(*): star scope"
+      },
+      {
+        "hash": "2222222222222222222222222222222222222222",
+        "message": "feat(a-b.c/d): weird scope"
+      },
+      {
+        "hash": "2323232323232323232323232323232323232323",
+        "message": "fix(Upper): U"
+      },
+      {
+        "hash": "2424242424242424242424242424242424242424",
+        "message": "fix(lower): l"
+      }
+    ],
+    "releaseType": "minor",
+    "notes": "# [1.1.0](https://github.com/o/r/compare/v1.0.0...v1.1.0) (DATE)\n\n\n### Bug Fixes\n\n* **lower:** l ([2424242](https://github.com/o/r/commit/2424242424242424242424242424242424242424))\n* **Upper:** U ([2323232](https://github.com/o/r/commit/2323232323232323232323232323232323232323))\n\n\n### Features\n\n* **a-b.c/d:** weird scope ([2222222](https://github.com/o/r/commit/2222222222222222222222222222222222222222))\n* **alpha:** a ([1f1f1f1](https://github.com/o/r/commit/1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f))\n* plain ([2020202](https://github.com/o/r/commit/2020202020202020202020202020202020202020))\n* star scope ([2121212](https://github.com/o/r/commit/2121212121212121212121212121212121212121))\n* **zeta:** z ([1e1e1e1](https://github.com/o/r/commit/1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e))\n"
+  },
+  {
+    "name": "non-conventional",
+    "version": "1.0.1",
+    "lastTag": "v1.0.0",
+    "nextTag": "v1.0.1",
+    "commits": [
+      {
+        "hash": "2525252525252525252525252525252525252525",
+        "message": "Update README.md"
+      },
+      {
+        "hash": "2626262626262626262626262626262626262626",
+        "message": "Merge pull request #5 from x/y\n\nfeat: hidden"
+      },
+      {
+        "hash": "2727272727272727272727272727272727272727",
+        "message": "Merge branch \"main\" into dev"
+      },
+      {
+        "hash": "2828282828282828282828282828282828282828",
+        "message": "fix: real"
+      }
+    ],
+    "releaseType": "patch",
+    "notes": "## [1.0.1](https://github.com/o/r/compare/v1.0.0...v1.0.1) (DATE)\n\n\n### Bug Fixes\n\n* real ([2828282](https://github.com/o/r/commit/2828282828282828282828282828282828282828))\n"
+  },
+  {
+    "name": "skip-release",
+    "version": "1.0.1",
+    "lastTag": "v1.0.0",
+    "nextTag": "v1.0.1",
+    "commits": [
+      {
+        "hash": "2929292929292929292929292929292929292929",
+        "message": "feat: skipped [skip release]"
+      },
+      {
+        "hash": "2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a",
+        "message": "fix: kept"
+      },
+      {
+        "hash": "2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b",
+        "message": "feat: also skipped [release skip]"
+      }
+    ],
+    "releaseType": "patch",
+    "notes": "## [1.0.1](https://github.com/o/r/compare/v1.0.0...v1.0.1) (DATE)\n\n\n### Bug Fixes\n\n* kept ([2a2a2a2](https://github.com/o/r/commit/2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a))\n\n\n### Features\n\n* also skipped [release skip] ([2b2b2b2](https://github.com/o/r/commit/2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b))\n* skipped [skip release] ([2929292](https://github.com/o/r/commit/2929292929292929292929292929292929292929))\n"
+  },
+  {
+    "name": "all-skipped",
+    "version": "1.0.1",
+    "lastTag": "v1.0.0",
+    "nextTag": "v1.0.1",
+    "commits": [
+      {
+        "hash": "2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c",
+        "message": "feat: skipped [skip release]"
+      }
+    ],
+    "releaseType": null,
+    "notes": "## [1.0.1](https://github.com/o/r/compare/v1.0.0...v1.0.1) (DATE)\n\n\n### Features\n\n* skipped [skip release] ([2c2c2c2](https://github.com/o/r/commit/2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c))\n"
+  },
+  {
+    "name": "gpg-and-fields",
+    "version": "1.0.1",
+    "lastTag": "v1.0.0",
+    "nextTag": "v1.0.1",
+    "commits": [
+      {
+        "hash": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d",
+        "message": "fix: signed\ngpg: Signature made\n\nbody line\n-custom-\nvalue"
+      }
+    ],
+    "releaseType": "patch",
+    "notes": "## [1.0.1](https://github.com/o/r/compare/v1.0.0...v1.0.1) (DATE)\n\n\n### Bug Fixes\n\n* signed ([2d2d2d2](https://github.com/o/r/commit/2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d))\n"
+  },
+  {
+    "name": "crlf",
+    "version": "1.1.0",
+    "lastTag": "v1.0.0",
+    "nextTag": "v1.1.0",
+    "commits": [
+      {
+        "hash": "2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e",
+        "message": "feat: windows\r\n\r\nbody\r\nBREAKING CHANGE: crlf note"
+      }
+    ],
+    "releaseType": "major",
+    "notes": "# [1.1.0](https://github.com/o/r/compare/v1.0.0...v1.1.0) (DATE)\n\n\n### Features\n\n* windows ([2e2e2e2](https://github.com/o/r/commit/2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e))\n\n\n### BREAKING CHANGES\n\n* crlf note\n"
+  },
+  {
+    "name": "types-with-notes",
+    "version": "2.0.0",
+    "lastTag": "v1.0.0",
+    "nextTag": "v2.0.0",
+    "commits": [
+      {
+        "hash": "2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f",
+        "message": "docs: d\n\nBREAKING CHANGE: n1"
+      },
+      {
+        "hash": "3030303030303030303030303030303030303030",
+        "message": "style: s\n\nBREAKING CHANGE: n2"
+      },
+      {
+        "hash": "3131313131313131313131313131313131313131",
+        "message": "refactor: r\n\nBREAKING CHANGE: n3"
+      },
+      {
+        "hash": "3232323232323232323232323232323232323232",
+        "message": "test: t\n\nBREAKING CHANGE: n4"
+      },
+      {
+        "hash": "3333333333333333333333333333333333333333",
+        "message": "build: b\n\nBREAKING CHANGE: n5"
+      },
+      {
+        "hash": "3434343434343434343434343434343434343434",
+        "message": "ci: c\n\nBREAKING CHANGE: n6"
+      },
+      {
+        "hash": "3535353535353535353535353535353535353535",
+        "message": "chore: ch\n\nBREAKING CHANGE: n7"
+      }
+    ],
+    "releaseType": "major",
+    "notes": "# [2.0.0](https://github.com/o/r/compare/v1.0.0...v2.0.0) (DATE)\n\n\n### Build System\n\n* b ([3333333](https://github.com/o/r/commit/3333333333333333333333333333333333333333))\n\n\n### chore\n\n* ch ([3535353](https://github.com/o/r/commit/3535353535353535353535353535353535353535))\n\n\n### Code Refactoring\n\n* r ([3131313](https://github.com/o/r/commit/3131313131313131313131313131313131313131))\n\n\n### Continuous Integration\n\n* c ([3434343](https://github.com/o/r/commit/3434343434343434343434343434343434343434))\n\n\n### Documentation\n\n* d ([2f2f2f2](https://github.com/o/r/commit/2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f))\n\n\n### Styles\n\n* s ([3030303](https://github.com/o/r/commit/3030303030303030303030303030303030303030))\n\n\n### Tests\n\n* t ([3232323](https://github.com/o/r/commit/3232323232323232323232323232323232323232))\n\n\n### BREAKING CHANGES\n\n* n1\n* n2\n* n3\n* n4\n* n5\n* n6\n* n7\n"
+  },
+  {
+    "name": "jshint-upper",
+    "version": "1.1.0",
+    "lastTag": "v1.0.0",
+    "nextTag": "v1.1.0",
+    "commits": [
+      {
+        "hash": "3636363636363636363636363636363636363636",
+        "message": "FEAT: shouting"
+      }
+    ],
+    "releaseType": "minor",
+    "notes": "# [1.1.0](https://github.com/o/r/compare/v1.0.0...v1.1.0) (DATE)\n"
+  },
+  {
+    "name": "release-false-rule",
+    "version": "1.0.1",
+    "lastTag": "v1.0.0",
+    "nextTag": "v1.0.1",
+    "commits": [
+      {
+        "hash": "3737373737373737373737373737373737373737",
+        "message": "feat(internal): hidden"
+      },
+      {
+        "hash": "3838383838383838383838383838383838383838",
+        "message": "fix: shown"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "scope": "internal",
+          "release": false
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [1.0.1](https://github.com/o/r/compare/v1.0.0...v1.0.1) (DATE)\n\n\n### Bug Fixes\n\n* shown ([3838383](https://github.com/o/r/commit/3838383838383838383838383838383838383838))\n\n\n### Features\n\n* **internal:** hidden ([3737373](https://github.com/o/r/commit/3737373737373737373737373737373737373737))\n"
+  },
+  {
+    "name": "glob-rules",
+    "version": "1.0.1",
+    "lastTag": "v1.0.0",
+    "nextTag": "v1.0.1",
+    "commits": [
+      {
+        "hash": "3939393939393939393939393939393939393939",
+        "message": "chore(deps-dev): bump"
+      },
+      {
+        "hash": "3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a",
+        "message": "chore(deps): bump"
+      }
+    ],
+    "analyzerConfig": {
+      "releaseRules": [
+        {
+          "type": "chore",
+          "scope": "deps*",
+          "release": "patch"
+        },
+        {
+          "scope": "{x,deps-dev}",
+          "release": false
+        }
+      ]
+    },
+    "releaseType": "patch",
+    "notes": "## [1.0.1](https://github.com/o/r/compare/v1.0.0...v1.0.1) (DATE)\n"
+  },
+  {
+    "name": "issue-in-subject-and-body",
+    "version": "1.0.1",
+    "lastTag": "v1.0.0",
+    "nextTag": "v1.0.1",
+    "commits": [
+      {
+        "hash": "3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b",
+        "message": "fix: thing #7\n\nCloses #7\nCloses #8"
+      }
+    ],
+    "releaseType": "patch",
+    "notes": "## [1.0.1](https://github.com/o/r/compare/v1.0.0...v1.0.1) (DATE)\n\n\n### Bug Fixes\n\n* thing [#7](https://github.com/o/r/issues/7) ([3b3b3b3](https://github.com/o/r/commit/3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b)), closes [#8](https://github.com/o/r/issues/8)\n"
+  },
+  {
+    "name": "empty-subject-header-only",
+    "version": "1.0.1",
+    "lastTag": "v1.0.0",
+    "nextTag": "v1.0.1",
+    "commits": [
+      {
+        "hash": "3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c",
+        "message": "fix: \n\nBREAKING CHANGE: weird"
+      }
+    ],
+    "releaseType": "major",
+    "notes": "## [1.0.1](https://github.com/o/r/compare/v1.0.0...v1.0.1) (DATE)\n\n\n### Bug Fixes\n\n* fix:  ([3c3c3c3](https://github.com/o/r/commit/3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c))\n\n\n### BREAKING CHANGES\n\n* weird\n"
+  },
+  {
+    "name": "other-host",
+    "version": "1.0.1",
+    "lastTag": "v1.0.0",
+    "nextTag": "v1.0.1",
+    "commits": [
+      {
+        "hash": "3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d",
+        "message": "fix: x (#3)"
+      }
+    ],
+    "repositoryUrl": "git@github.com:3h4x/mcp-http-tools.git",
+    "releaseType": "patch",
+    "notes": "## [1.0.1](https://github.com/3h4x/mcp-http-tools/compare/v1.0.0...v1.0.1) (DATE)\n\n\n### Bug Fixes\n\n* x ([#3](https://github.com/3h4x/mcp-http-tools/issues/3)) ([3d3d3d3](https://github.com/3h4x/mcp-http-tools/commit/3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d))\n"
+  },
+  {
+    "name": "pkg-style-url",
+    "version": "1.0.1",
+    "lastTag": "v1.0.0",
+    "nextTag": "v1.0.1",
+    "commits": [
+      {
+        "hash": "3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e",
+        "message": "fix: y"
+      }
+    ],
+    "repositoryUrl": "git+https://github.com/3h4x/mcp-http-tools.git",
+    "releaseType": "patch",
+    "notes": "## [1.0.1](https://github.com/3h4x/mcp-http-tools/compare/v1.0.0...v1.0.1) (DATE)\n\n\n### Bug Fixes\n\n* y ([3e3e3e3](https://github.com/3h4x/mcp-http-tools/commit/3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e))\n"
+  },
+  {
+    "name": "scope-sort-locale",
+    "version": "1.1.0",
+    "lastTag": "v1.0.0",
+    "nextTag": "v1.1.0",
+    "commits": [
+      {
+        "hash": "3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f",
+        "message": "feat: Beta"
+      },
+      {
+        "hash": "4040404040404040404040404040404040404040",
+        "message": "feat: alpha"
+      },
+      {
+        "hash": "4141414141414141414141414141414141414141",
+        "message": "feat: _under"
+      },
+      {
+        "hash": "4242424242424242424242424242424242424242",
+        "message": "feat: 10 things"
+      },
+      {
+        "hash": "4343434343434343434343434343434343434343",
+        "message": "feat: 9 things"
+      },
+      {
+        "hash": "4444444444444444444444444444444444444444",
+        "message": "feat: Ábc"
+      }
+    ],
+    "releaseType": "minor",
+    "notes": "# [1.1.0](https://github.com/o/r/compare/v1.0.0...v1.1.0) (DATE)\n\n\n### Features\n\n* _under ([4141414](https://github.com/o/r/commit/4141414141414141414141414141414141414141))\n* 10 things ([4242424](https://github.com/o/r/commit/4242424242424242424242424242424242424242))\n* 9 things ([4343434](https://github.com/o/r/commit/4343434343434343434343434343434343434343))\n* Ábc ([4444444](https://github.com/o/r/commit/4444444444444444444444444444444444444444))\n* alpha ([4040404](https://github.com/o/r/commit/4040404040404040404040404040404040404040))\n* Beta ([3f3f3f3](https://github.com/o/r/commit/3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f))\n"
+  }
+]

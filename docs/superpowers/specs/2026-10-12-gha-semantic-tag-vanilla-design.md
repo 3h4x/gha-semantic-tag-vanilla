@@ -1,7 +1,7 @@
 # gha-semantic-tag-vanilla — design
 
 Date: 2026-10-12
-Status: draft, awaiting review
+Status: implemented (see "Changes found during implementation" at the end)
 
 ## Why
 
@@ -93,22 +93,25 @@ All modules except `index`, `git`, `github` and `npm` are pure functions.
 | Module | Responsibility |
 |---|---|
 | `src/config.mjs` | Read + validate `.releaserc`, reject unsupported keys/plugins, return normalised config. |
-| `src/commits.mjs` | Parse a commit message (angular: type, scope, subject, `!`, `BREAKING CHANGE:` footer, revert, issue refs). |
+| `src/parser.mjs` | Port of conventional-commits-parser with the angular options, revert-pair filter. |
 | `src/analyze.mjs` | Parsed commits + rules → `major` / `minor` / `patch` / `null`. |
-| `src/version.mjs` | Pick the last release tag matching `tagFormat`, compute the next version. |
+| `src/version.mjs` | Release tags matching `tagFormat`, last release, next version. |
 | `src/notes.mjs` | Render release notes markdown (angular preset format). |
-| `src/git.mjs` | Thin `execFileSync('git', …)` wrapper: log, tags, create/push tag. |
-| `src/github.mjs` | Thin REST wrapper on `fetch`: releases, PRs for a commit, comments, labels, issues. 3 retries with backoff on 429/5xx, none on other 4xx. |
-| `src/npm.mjs` | Set `package.json` version, write `.npmrc` auth, run `npm publish`. |
-| `src/index.mjs` | Orchestration, outputs, step summary. |
+| `src/comments.mjs` | Success/failure comment texts, closed-issue references. |
+| `src/git.mjs` | Thin `execFileSync('git', …)` wrapper; scrubs secrets from errors. |
+| `src/github.mjs` | Thin REST wrapper on `fetch`, 3 retries on 429/5xx/network, none on other 4xx. |
+| `src/npm.mjs` | Registry + auth resolution, `npm version`, `npm publish`, `npm view`. |
+| `src/run.mjs` | The pipeline, with all I/O injected. |
+| `src/index.mjs` | Actions entry point: inputs, outputs, step summary, masking. |
 
 ## Flow
 
 Same order as semantic-release:
 
-1. **Verify** (nothing changed yet): config valid; current branch is in `branches` (otherwise
-   exit 0, no release); full history present (shallow clone ⇒ fail with "use fetch-depth: 0");
-   token can push (`git push --dry-run` of a probe ref); npm token present when publishing.
+1. **Verify** (nothing changed yet): config valid; not a pull_request event and current
+   branch is in `branches` (otherwise exit 0, no release); fetch tags, unshallowing a shallow
+   clone as semantic-release does; local HEAD equals the remote branch (otherwise exit 0);
+   token can push (`git push --dry-run HEAD:<branch>`); npm auth when publishing.
 2. **Recover** (see below).
 3. **Analyze** commits since the last release tag; `null` ⇒ exit 0, `new_release_published=false`.
 4. **Generate notes.**
@@ -134,7 +137,7 @@ recommends `concurrency: release` in the consumer workflow.
 ## Testing
 
 1. **Unit** (`node --test`, no network, no git) for `config`, `commits`, `analyze`,
-   `version`, `notes`: revert commits, merge commits, scopes with dashes, `!` and footer
+   `version`, `notes`: revert commits, merge commits, scopes with dashes, `!` (not breaking) and footer
    breaking changes, `[skip release]`, no tags, tags not matching `tagFormat`, custom rules
    falling through to defaults, `release: false`.
 2. **Parity golden files**: run real `semantic-release --dry-run` (pinned version, once, in a
@@ -158,3 +161,26 @@ CI: `node --test` on push/PR, plus `actions/*` pinned by SHA (the only Dependabo
 Not covered by this action: `bitlazer-io/bitlazer`'s handlebars alerts come from
 `solidity-coverage -> sc-istanbul`, not semantic-release; they are fixed separately by a
 lockfile refresh once handlebars 4.7.10 passes `minimumReleaseAge` (2026-10-12 ~22:37 UTC).
+
+## Changes found during implementation
+
+Recorded here so the spec matches what shipped:
+
+- **`feat!:` is not breaking.** The angular preset's header pattern has no `!`, so
+  semantic-release ignores it (the commit gets no type at all). Parity means this action does
+  too; the parity fixtures prove it. Only a `BREAKING CHANGE:` footer is breaking.
+- **Shallow clones are unshallowed**, not rejected: semantic-release runs
+  `git fetch --unshallow --tags` itself.
+- **A branch behind its remote** and **pull_request events** produce no release, as in
+  semantic-release.
+- **`branches`** must name exactly one plain branch; omitted means `main`/`master`.
+- **The semantic-release git note** (`refs/notes/semantic-release-<tag>`, `{"channels":[null]}`)
+  is written and pushed per tag so a repo can switch back.
+- **A failed tag push deletes the local tag**, and recovery only considers a tag that exists on
+  the remote, so a local-only tag is never "recovered".
+- **Tokens**: `GH_TOKEN` / `GITHUB_TOKEN` / `NPM_TOKEN` from the environment win over the
+  inputs, so migrating workflows keep their `env:` block.
+- **Issue references** for success comments are matched by keyword regex instead of
+  `issue-parser` (documented in the README).
+- Parity: 30 synthetic cases + 52 mcp-http-tools releases + 818 tamtam releases, identical
+  version and notes.

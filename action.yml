@@ -1,0 +1,52 @@
+name: semantic-tag-vanilla
+description: Zero-dependency drop-in replacement for semantic-release (commit-analyzer, release-notes-generator, npm, github).
+author: 3h4x
+branding:
+  icon: tag
+  color: green
+
+inputs:
+  dry-run:
+    description: Compute and print the next version and its notes without tagging or publishing.
+    required: false
+    default: 'false'
+  github-token:
+    description: Token used to push the tag and call the GitHub API. GH_TOKEN / GITHUB_TOKEN environment variables take precedence, as in semantic-release.
+    required: false
+    default: ${{ github.token }}
+  npm-token:
+    description: Token used by @semantic-release/npm when the NPM_TOKEN environment variable is not set.
+    required: false
+  working-directory:
+    description: Repository root containing .releaserc. Defaults to the workspace.
+    required: false
+
+outputs:
+  new_release_published:
+    description: "'true' when a new version was tagged and published."
+  new_release_version:
+    description: The new version (also set in dry-run).
+  new_release_major_version:
+    description: Major part of the new version.
+  new_release_minor_version:
+    description: Minor part of the new version.
+  new_release_patch_version:
+    description: Patch part of the new version.
+  new_release_git_tag:
+    description: Git tag of the new version.
+  new_release_git_head:
+    description: Commit the new tag points to.
+  new_release_notes:
+    description: Release notes of the new version.
+  new_release_type:
+    description: major, minor or patch.
+  last_release_version:
+    description: Version of the previous release, if any.
+  last_release_git_tag:
+    description: Tag of the previous release, if any.
+  recovered_release_git_tag:
+    description: Tag of a half-finished earlier release this run published, if any.
+
+runs:
+  using: node24
+  main: src/index.mjs
