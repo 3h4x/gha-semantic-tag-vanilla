@@ -3,12 +3,22 @@
 
 import { execFileSync } from 'node:child_process';
 
-export function createGit({ cwd, secrets = [] }) {
+// semantic-release's CI defaults: an identity for `git notes` (the runner has
+// none) and no interactive credential prompts. Values already set win.
+const GIT_ENV = {
+  GIT_AUTHOR_NAME: 'semantic-release-bot',
+  GIT_AUTHOR_EMAIL: 'semantic-release-bot@martynus.net',
+  GIT_COMMITTER_NAME: 'semantic-release-bot',
+  GIT_COMMITTER_EMAIL: 'semantic-release-bot@martynus.net',
+};
+
+export function createGit({ cwd, secrets = [], env = process.env }) {
+  const gitEnv = { ...GIT_ENV, ...env, GIT_ASKPASS: 'echo', GIT_TERMINAL_PROMPT: '0' };
   const scrub = (text) => secrets.filter(Boolean).reduce((s, secret) => s.split(secret).join('[secure]'), String(text));
 
   function run(args, { allowFailure = false } = {}) {
     try {
-      return execFileSync('git', args, { cwd, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'], maxBuffer: 1 << 28 }).trim();
+      return execFileSync('git', args, { cwd, env: gitEnv, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'], maxBuffer: 1 << 28 }).trim();
     } catch (error) {
       if (allowFailure) return null;
       const stderr = error.stderr ? String(error.stderr).trim() : '';

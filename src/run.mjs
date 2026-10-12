@@ -171,8 +171,8 @@ async function publishRelease(ctx) {
 
     if (!recovering) {
       git.tag(gitTag, 'HEAD');
-      git.addNote(gitTag);
       try {
+        git.addNote(gitTag);
         git.pushTag(pushRemote, gitTag);
       } catch (error) {
         // Leave no local-only tag behind: the next run must not mistake it
@@ -295,7 +295,7 @@ async function openFailIssue(github, config, branch, errors, log) {
   const issue = await github.createIssue({
     title: config.failTitle,
     body: `${body}\n\n${ISSUE_ID}`,
-    labels: [...(config.labels || []), RELEASE_FAIL_LABEL],
+    labels: [...new Set([...(config.labels || []), RELEASE_FAIL_LABEL])],
     ...(config.assignees ? { assignees: config.assignees } : {}),
   });
   log(`Created issue #${issue.number}: ${issue.html_url}.`);

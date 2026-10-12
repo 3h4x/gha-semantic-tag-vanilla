@@ -38,7 +38,8 @@ export function createGitHub({ token, owner, repo, apiUrl = 'https://api.github.
       const text = await response.text();
       const data = text ? JSON.parse(text) : null;
       if (!response.ok) {
-        throw new GitHubError(response.status, `${method} ${path} returned ${response.status}: ${data?.message || text}`);
+        const errors = data?.errors ? ` ${JSON.stringify(data.errors)}` : '';
+        throw new GitHubError(response.status, `${method} ${path} returned ${response.status}: ${data?.message || text}${errors}`);
       }
       return { data, link: response.headers.get('link') };
     }

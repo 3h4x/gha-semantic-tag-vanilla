@@ -87,7 +87,13 @@ after(() => server.close());
 // --- repository --------------------------------------------------------------
 let work;
 let remote;
-const g = (...args) => execFileSync('git', args, { cwd: work, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }).trim();
+const g = (...args) => execFileSync('git', ['-c', 'user.email=t@example.com', '-c', 'user.name=Test', ...args], { cwd: work, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }).trim();
+
+// Like a fresh runner: no global git config, so no identity.
+const emptyConfig = join(mkdtempSync(join(tmpdir(), 'gstv-home-')), 'gitconfig');
+writeFileSync(emptyConfig, '');
+process.env.GIT_CONFIG_GLOBAL = emptyConfig;
+process.env.GIT_CONFIG_NOSYSTEM = '1';
 const gr = (...args) => execFileSync('git', ['--git-dir', remote, ...args], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }).trim();
 function commit(message) {
   writeFileSync(join(work, 'file.txt'), `${Math.random()}\n`);
@@ -102,8 +108,6 @@ function setup(releaserc, pkg) {
   work = join(root, 'work');
   execFileSync('git', ['init', '-q', '--bare', '-b', 'main', remote]);
   execFileSync('git', ['clone', '-q', remote, work], { stdio: 'ignore' });
-  g('config', 'user.email', 't@example.com');
-  g('config', 'user.name', 'Test');
   g('config', 'commit.gpgsign', 'false');
   g('config', 'tag.gpgsign', 'false');
   g('checkout', '-q', '-b', 'main');
@@ -146,6 +150,7 @@ test('first release, then patch with PR and issue comments, then nothing to rele
   assert.equal(result.version, '1.0.0');
   assert.equal(gr('tag'), 'v1.0.0');
   assert.match(gr('for-each-ref', 'refs/notes/'), /refs\/notes\/semantic-release-v1\.0\.0/);
+  assert.equal(gr('log', '-1', '--format=%an <%ae>', 'refs/notes/semantic-release-v1.0.0'), 'semantic-release-bot <semantic-release-bot@martynus.net>');
   const r1 = api.releases.get('v1.0.0');
   assert.equal(r1.name, 'v1.0.0');
   assert.equal(r1.target_commitish, 'main');
@@ -268,7 +273,7 @@ test('failure opens an issue, a second failure comments on it, success closes it
   await assert.rejects(release(), /git push/);
   const [issue] = [...api.issues.values()];
   assert.equal(issue.title, 'The automated release is failing 🚨');
-  assert.deepEqual(issue.labels.map((l) => l.name), ['semantic-release', 'semantic-release']);
+  assert.deepEqual(issue.labels.map((l) => l.name), ['semantic-release']);
   assert.match(issue.body, /<!-- semantic-release:github -->$/);
   assert.ok(!logs.join('\n').includes('tok@'), 'token never logged');
 
