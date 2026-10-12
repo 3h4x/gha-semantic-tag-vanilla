@@ -12,6 +12,11 @@ tree (handlebars via `conventional-changelog-writer`, for one) pages every repo
 that uses it. This action is plain Node built-ins: no lockfile, no
 `node_modules`, no bundle. The code in this repo is the code that runs.
 
+Listed on the [GitHub Marketplace](https://github.com/marketplace/actions/semantic-tag-vanilla).
+Releases are [immutable](https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/immutable-releases):
+a `vX.Y.Z` tag never moves once released. `v1` follows the latest `v1.x.y`;
+pin a full version or a commit SHA if you want it fixed.
+
 ## Usage
 
 Replace the semantic-release step and drop its devDependencies. Keep `.releaserc`.
