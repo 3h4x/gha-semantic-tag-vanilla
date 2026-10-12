@@ -1,0 +1,642 @@
+{
+  "cases": [
+    {
+      "name": "first-release",
+      "version": "1.0.0",
+      "nextTag": "v1.0.0",
+      "commits": [
+        {
+          "hash": "1111111111111111111111111111111111111111",
+          "message": "feat: initial"
+        },
+        {
+          "hash": "2222222222222222222222222222222222222222",
+          "message": "chore: setup"
+        }
+      ]
+    },
+    {
+      "name": "patch-header",
+      "version": "1.0.1",
+      "lastTag": "v1.0.0",
+      "nextTag": "v1.0.1",
+      "commits": [
+        {
+          "hash": "3333333333333333333333333333333333333333",
+          "message": "fix: a bug"
+        }
+      ]
+    },
+    {
+      "name": "docs-only-default-rules",
+      "version": "1.0.1",
+      "lastTag": "v1.0.0",
+      "nextTag": "v1.0.1",
+      "commits": [
+        {
+          "hash": "4444444444444444444444444444444444444444",
+          "message": "docs: readme"
+        },
+        {
+          "hash": "5555555555555555555555555555555555555555",
+          "message": "chore: deps"
+        }
+      ]
+    },
+    {
+      "name": "docs-only-custom-rules",
+      "version": "1.0.1",
+      "lastTag": "v1.0.0",
+      "nextTag": "v1.0.1",
+      "commits": [
+        {
+          "hash": "6666666666666666666666666666666666666666",
+          "message": "docs: readme"
+        },
+        {
+          "hash": "7777777777777777777777777777777777777777",
+          "message": "chore: deps"
+        },
+        {
+          "hash": "8888888888888888888888888888888888888888",
+          "message": "ci: bump"
+        }
+      ],
+      "analyzerConfig": {
+        "releaseRules": [
+          {
+            "breaking": true,
+            "release": "major"
+          },
+          {
+            "type": "feat",
+            "release": "minor"
+          },
+          {
+            "type": "fix",
+            "release": "patch"
+          },
+          {
+            "type": "chore",
+            "release": "patch"
+          },
+          {
+            "type": "docs",
+            "release": "patch"
+          },
+          {
+            "type": "style",
+            "release": "patch"
+          },
+          {
+            "type": "refactor",
+            "release": "patch"
+          },
+          {
+            "type": "perf",
+            "release": "patch"
+          },
+          {
+            "type": "test",
+            "release": "patch"
+          },
+          {
+            "type": "build",
+            "release": "patch"
+          },
+          {
+            "type": "ci",
+            "release": "patch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "bang-not-breaking",
+      "version": "1.1.0",
+      "lastTag": "v1.0.0",
+      "nextTag": "v1.1.0",
+      "commits": [
+        {
+          "hash": "9999999999999999999999999999999999999999",
+          "message": "feat!: big change"
+        },
+        {
+          "hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "message": "feat: small"
+        }
+      ]
+    },
+    {
+      "name": "bang-custom-rules",
+      "version": "1.0.1",
+      "lastTag": "v1.0.0",
+      "nextTag": "v1.0.1",
+      "commits": [
+        {
+          "hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "message": "feat!: big change"
+        },
+        {
+          "hash": "cccccccccccccccccccccccccccccccccccccccc",
+          "message": "fix: small"
+        }
+      ],
+      "analyzerConfig": {
+        "releaseRules": [
+          {
+            "breaking": true,
+            "release": "major"
+          },
+          {
+            "type": "feat",
+            "release": "minor"
+          },
+          {
+            "type": "fix",
+            "release": "patch"
+          },
+          {
+            "type": "chore",
+            "release": "patch"
+          },
+          {
+            "type": "docs",
+            "release": "patch"
+          },
+          {
+            "type": "style",
+            "release": "patch"
+          },
+          {
+            "type": "refactor",
+            "release": "patch"
+          },
+          {
+            "type": "perf",
+            "release": "patch"
+          },
+          {
+            "type": "test",
+            "release": "patch"
+          },
+          {
+            "type": "build",
+            "release": "patch"
+          },
+          {
+            "type": "ci",
+            "release": "patch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "breaking-footer",
+      "version": "2.0.0",
+      "lastTag": "v1.0.0",
+      "nextTag": "v2.0.0",
+      "commits": [
+        {
+          "hash": "dddddddddddddddddddddddddddddddddddddddd",
+          "message": "feat(core): new api\n\nBREAKING CHANGE: old api removed\n\nSee docs."
+        },
+        {
+          "hash": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+          "message": "fix: thing"
+        }
+      ]
+    },
+    {
+      "name": "breaking-footer-colon-less",
+      "version": "2.0.0",
+      "lastTag": "v1.0.0",
+      "nextTag": "v2.0.0",
+      "commits": [
+        {
+          "hash": "ffffffffffffffffffffffffffffffffffffffff",
+          "message": "fix: x\n\nBREAKING CHANGE removes y"
+        }
+      ]
+    },
+    {
+      "name": "breaking-hyphen-keyword",
+      "version": "1.1.0",
+      "lastTag": "v1.0.0",
+      "nextTag": "v1.1.0",
+      "commits": [
+        {
+          "hash": "1010101010101010101010101010101010101010",
+          "message": "feat: x\n\nBREAKING-CHANGE: not angular"
+        }
+      ]
+    },
+    {
+      "name": "multiple-notes",
+      "version": "2.0.0",
+      "lastTag": "v1.0.0",
+      "nextTag": "v2.0.0",
+      "commits": [
+        {
+          "hash": "1111111111111111111111111111111111111111",
+          "message": "feat(a): one\n\nBREAKING CHANGE: first"
+        },
+        {
+          "hash": "1212121212121212121212121212121212121212",
+          "message": "fix(b): two\n\nBREAKING CHANGE: second\nline two\n\nCloses #3"
+        }
+      ]
+    },
+    {
+      "name": "revert-pair",
+      "version": "1.0.1",
+      "lastTag": "v1.0.0",
+      "nextTag": "v1.0.1",
+      "commits": [
+        {
+          "hash": "1313131313131313131313131313131313131313",
+          "message": "revert: feat: thing\n\nThis reverts commit 6363636363636363636363636363636363636363."
+        },
+        {
+          "hash": "6363636363636363636363636363636363636363",
+          "message": "feat: thing"
+        },
+        {
+          "hash": "1414141414141414141414141414141414141414",
+          "message": "fix: other"
+        }
+      ]
+    },
+    {
+      "name": "revert-unpaired",
+      "version": "1.0.1",
+      "lastTag": "v1.0.0",
+      "nextTag": "v1.0.1",
+      "commits": [
+        {
+          "hash": "1515151515151515151515151515151515151515",
+          "message": "Revert \"feat: old thing\"\n\nThis reverts commit abcdef1234567."
+        }
+      ]
+    },
+    {
+      "name": "revert-git-style",
+      "version": "1.0.1",
+      "lastTag": "v1.0.0",
+      "nextTag": "v1.0.1",
+      "commits": [
+        {
+          "hash": "1616161616161616161616161616161616161616",
+          "message": "Revert \"fix: bug\"\n\nThis reverts commit 6262626262626262626262626262626262626262."
+        },
+        {
+          "hash": "6262626262626262626262626262626262626262",
+          "message": "fix: bug"
+        },
+        {
+          "hash": "1717171717171717171717171717171717171717",
+          "message": "perf: speed"
+        }
+      ]
+    },
+    {
+      "name": "references",
+      "version": "1.1.0",
+      "lastTag": "v1.0.0",
+      "nextTag": "v1.1.0",
+      "commits": [
+        {
+          "hash": "1818181818181818181818181818181818181818",
+          "message": "feat: add (#12)"
+        },
+        {
+          "hash": "1919191919191919191919191919191919191919",
+          "message": "fix: x\n\nFixes #1, closes #2\nresolves owner/other#3"
+        },
+        {
+          "hash": "1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a",
+          "message": "fix: gh prefix\n\nfixes gh-9"
+        },
+        {
+          "hash": "1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b",
+          "message": "fix: url ref\n\nsee https://github.com/o/r/issues/4"
+        }
+      ]
+    },
+    {
+      "name": "mentions",
+      "version": "1.0.1",
+      "lastTag": "v1.0.0",
+      "nextTag": "v1.0.1",
+      "commits": [
+        {
+          "hash": "1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c",
+          "message": "fix: thanks @alice and @bob/team, not `@code`"
+        },
+        {
+          "hash": "1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d",
+          "message": "fix: email a@b.com"
+        }
+      ]
+    },
+    {
+      "name": "scopes-and-sort",
+      "version": "1.1.0",
+      "lastTag": "v1.0.0",
+      "nextTag": "v1.1.0",
+      "commits": [
+        {
+          "hash": "1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e",
+          "message": "feat(zeta): z"
+        },
+        {
+          "hash": "1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f",
+          "message": "feat(alpha): a"
+        },
+        {
+          "hash": "2020202020202020202020202020202020202020",
+          "message": "feat: plain"
+        },
+        {
+          "hash": "2121212121212121212121212121212121212121",
+          "message": "feat(*): star scope"
+        },
+        {
+          "hash": "2222222222222222222222222222222222222222",
+          "message": "feat(a-b.c/d): weird scope"
+        },
+        {
+          "hash": "2323232323232323232323232323232323232323",
+          "message": "fix(Upper): U"
+        },
+        {
+          "hash": "2424242424242424242424242424242424242424",
+          "message": "fix(lower): l"
+        }
+      ]
+    },
+    {
+      "name": "non-conventional",
+      "version": "1.0.1",
+      "lastTag": "v1.0.0",
+      "nextTag": "v1.0.1",
+      "commits": [
+        {
+          "hash": "2525252525252525252525252525252525252525",
+          "message": "Update README.md"
+        },
+        {
+          "hash": "2626262626262626262626262626262626262626",
+          "message": "Merge pull request #5 from x/y\n\nfeat: hidden"
+        },
+        {
+          "hash": "2727272727272727272727272727272727272727",
+          "message": "Merge branch \"main\" into dev"
+        },
+        {
+          "hash": "2828282828282828282828282828282828282828",
+          "message": "fix: real"
+        }
+      ]
+    },
+    {
+      "name": "skip-release",
+      "version": "1.0.1",
+      "lastTag": "v1.0.0",
+      "nextTag": "v1.0.1",
+      "commits": [
+        {
+          "hash": "2929292929292929292929292929292929292929",
+          "message": "feat: skipped [skip release]"
+        },
+        {
+          "hash": "2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a",
+          "message": "fix: kept"
+        },
+        {
+          "hash": "2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b",
+          "message": "feat: also skipped [release skip]"
+        }
+      ]
+    },
+    {
+      "name": "all-skipped",
+      "version": "1.0.1",
+      "lastTag": "v1.0.0",
+      "nextTag": "v1.0.1",
+      "commits": [
+        {
+          "hash": "2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c",
+          "message": "feat: skipped [skip release]"
+        }
+      ]
+    },
+    {
+      "name": "gpg-and-fields",
+      "version": "1.0.1",
+      "lastTag": "v1.0.0",
+      "nextTag": "v1.0.1",
+      "commits": [
+        {
+          "hash": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d",
+          "message": "fix: signed\ngpg: Signature made\n\nbody line\n-custom-\nvalue"
+        }
+      ]
+    },
+    {
+      "name": "crlf",
+      "version": "1.1.0",
+      "lastTag": "v1.0.0",
+      "nextTag": "v1.1.0",
+      "commits": [
+        {
+          "hash": "2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e",
+          "message": "feat: windows\r\n\r\nbody\r\nBREAKING CHANGE: crlf note"
+        }
+      ]
+    },
+    {
+      "name": "types-with-notes",
+      "version": "2.0.0",
+      "lastTag": "v1.0.0",
+      "nextTag": "v2.0.0",
+      "commits": [
+        {
+          "hash": "2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f",
+          "message": "docs: d\n\nBREAKING CHANGE: n1"
+        },
+        {
+          "hash": "3030303030303030303030303030303030303030",
+          "message": "style: s\n\nBREAKING CHANGE: n2"
+        },
+        {
+          "hash": "3131313131313131313131313131313131313131",
+          "message": "refactor: r\n\nBREAKING CHANGE: n3"
+        },
+        {
+          "hash": "3232323232323232323232323232323232323232",
+          "message": "test: t\n\nBREAKING CHANGE: n4"
+        },
+        {
+          "hash": "3333333333333333333333333333333333333333",
+          "message": "build: b\n\nBREAKING CHANGE: n5"
+        },
+        {
+          "hash": "3434343434343434343434343434343434343434",
+          "message": "ci: c\n\nBREAKING CHANGE: n6"
+        },
+        {
+          "hash": "3535353535353535353535353535353535353535",
+          "message": "chore: ch\n\nBREAKING CHANGE: n7"
+        }
+      ]
+    },
+    {
+      "name": "jshint-upper",
+      "version": "1.1.0",
+      "lastTag": "v1.0.0",
+      "nextTag": "v1.1.0",
+      "commits": [
+        {
+          "hash": "3636363636363636363636363636363636363636",
+          "message": "FEAT: shouting"
+        }
+      ]
+    },
+    {
+      "name": "release-false-rule",
+      "version": "1.0.1",
+      "lastTag": "v1.0.0",
+      "nextTag": "v1.0.1",
+      "commits": [
+        {
+          "hash": "3737373737373737373737373737373737373737",
+          "message": "feat(internal): hidden"
+        },
+        {
+          "hash": "3838383838383838383838383838383838383838",
+          "message": "fix: shown"
+        }
+      ],
+      "analyzerConfig": {
+        "releaseRules": [
+          {
+            "scope": "internal",
+            "release": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "glob-rules",
+      "version": "1.0.1",
+      "lastTag": "v1.0.0",
+      "nextTag": "v1.0.1",
+      "commits": [
+        {
+          "hash": "3939393939393939393939393939393939393939",
+          "message": "chore(deps-dev): bump"
+        },
+        {
+          "hash": "3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a",
+          "message": "chore(deps): bump"
+        }
+      ],
+      "analyzerConfig": {
+        "releaseRules": [
+          {
+            "type": "chore",
+            "scope": "deps*",
+            "release": "patch"
+          },
+          {
+            "scope": "{x,deps-dev}",
+            "release": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "issue-in-subject-and-body",
+      "version": "1.0.1",
+      "lastTag": "v1.0.0",
+      "nextTag": "v1.0.1",
+      "commits": [
+        {
+          "hash": "3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b",
+          "message": "fix: thing #7\n\nCloses #7\nCloses #8"
+        }
+      ]
+    },
+    {
+      "name": "empty-subject-header-only",
+      "version": "1.0.1",
+      "lastTag": "v1.0.0",
+      "nextTag": "v1.0.1",
+      "commits": [
+        {
+          "hash": "3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c",
+          "message": "fix: \n\nBREAKING CHANGE: weird"
+        }
+      ]
+    },
+    {
+      "name": "other-host",
+      "version": "1.0.1",
+      "lastTag": "v1.0.0",
+      "nextTag": "v1.0.1",
+      "commits": [
+        {
+          "hash": "3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d",
+          "message": "fix: x (#3)"
+        }
+      ],
+      "repositoryUrl": "git@github.com:3h4x/mcp-http-tools.git"
+    },
+    {
+      "name": "pkg-style-url",
+      "version": "1.0.1",
+      "lastTag": "v1.0.0",
+      "nextTag": "v1.0.1",
+      "commits": [
+        {
+          "hash": "3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e",
+          "message": "fix: y"
+        }
+      ],
+      "repositoryUrl": "git+https://github.com/3h4x/mcp-http-tools.git"
+    },
+    {
+      "name": "scope-sort-locale",
+      "version": "1.1.0",
+      "lastTag": "v1.0.0",
+      "nextTag": "v1.1.0",
+      "commits": [
+        {
+          "hash": "3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f",
+          "message": "feat: Beta"
+        },
+        {
+          "hash": "4040404040404040404040404040404040404040",
+          "message": "feat: alpha"
+        },
+        {
+          "hash": "4141414141414141414141414141414141414141",
+          "message": "feat: _under"
+        },
+        {
+          "hash": "4242424242424242424242424242424242424242",
+          "message": "feat: 10 things"
+        },
+        {
+          "hash": "4343434343434343434343434343434343434343",
+          "message": "feat: 9 things"
+        },
+        {
+          "hash": "4444444444444444444444444444444444444444",
+          "message": "feat: Ábc"
+        }
+      ]
+    }
+  ]
+}
